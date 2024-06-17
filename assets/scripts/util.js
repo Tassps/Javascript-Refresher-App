@@ -1,1 +1,1 @@
-export 
+export let apiKey = "benslfaski1";
