@@ -7,4 +7,7 @@
 // console.log(util.apiKey);
 // console.log(content);
 
-console.log("Hello World!");
+let userMessage = "Hello World!!!";
+
+console.log(userMessage);
+console.log(userMessage);
