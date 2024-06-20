@@ -19,4 +19,8 @@ console.log(10 * 5); // I used the * operator to multiply values
 
 console.log("Hello" + " world"); // I used the + operator to concatenate the two strings
 console.log(10 === 5); // I used the === sign to check for equality
-console.log;
+console.log(10 === 10); // I used the === sign to check for equality
+console.log(10 === 10);
+console.log(10 === 10);
+console.log(10 === 10);
+console.log(10 === 10);
