@@ -26,5 +26,7 @@
 // console.log(10 >= 10);
 
 function greet() {
-  console.log("Hello!");
+  console.log("Hello!"); // Defined a function for demonstration purposes
 }
+
+greet(); // Calling or invoking the function greet
