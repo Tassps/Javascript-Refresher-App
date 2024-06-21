@@ -29,4 +29,9 @@
 //   console.log("Hello!"); // Defined a function for demonstration purposes
 // }
 
-greet(); // Calling or invoking the function greet
+function greetUser(userName, message) {
+  console.log(userName);
+  console.log(message);
+}
+
+// greet(); // Calling or invoking the function greet
