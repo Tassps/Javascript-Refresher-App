@@ -33,13 +33,19 @@
 //   console.log("Hello!"); // Defined a function for demonstration purposes
 // }
 
-function greetUser(userName, message = "Hello!") {
-  // I added a default value for purposes of demonstration
-  console.log(userName); // I defined the function greetUser and added 2 parameters to it
-  console.log(message);
+// function greetUser(userName, message = "Hello!") {
+//   // I added a default value for purposes of demonstration
+//   console.log(userName); // I defined the function greetUser and added 2 parameters to it
+//   console.log(message);
+// }
+
+function createGreeting(userName, message = "Hello!") {
+  // console.log(userName);
+  // console.log(message);
+  return "Hi, I am" + userName + ". " + message;
 }
 
 // greet(); // Calling or invoking the function greet
 
-greetUser("Max"); // I called the function greetUser and placed 2 input values in it
-greetUser("Manuel", "Hello, what's up?"); // I called the function greetUser and placed a new set of input values in it
+// greetUser("Max"); // I called the function greetUser and placed 2 input values in it
+// greetUser("Manuel", "Hello, what's up?"); // I called the function greetUser and placed a new set of input values in it
