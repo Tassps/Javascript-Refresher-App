@@ -30,8 +30,11 @@
 // }
 
 function greetUser(userName, message) {
-  console.log(userName);
+  console.log(userName); // I defined the function greetUser and added 2 parameters to it
   console.log(message);
 }
 
 // greet(); // Calling or invoking the function greet
+
+greetUser("Max", "Hello!"); // I called the function greetUser and placed 2 input values in it
+greetUser("Manuel", "Hello, what's up?"); // I called the function greetUser and placed a new set of input values in it
