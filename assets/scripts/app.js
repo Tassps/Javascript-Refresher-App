@@ -25,8 +25,8 @@
 // console.log(10 <= 10); // I used the <=, => operators to check if the values are greater or equal or smaller or equal
 // console.log(10 >= 10);
 
-function greet() {
-  console.log("Hello!"); // Defined a function for demonstration purposes
-}
+// function greet() {
+//   console.log("Hello!"); // Defined a function for demonstration purposes
+// }
 
 greet(); // Calling or invoking the function greet
