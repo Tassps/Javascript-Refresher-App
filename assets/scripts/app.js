@@ -56,3 +56,11 @@
 
 // const greeting2 = createGreeting("George", "Hello, what's up?"); // I stored the function return value in a constant variable for a readability perspective
 // console.log(greeting2);
+
+// Arrow functions
+
+// I made an anonymous arrow function, which is exported by default and carries no name
+export default (userName, message) => {
+  console.log("Hello");
+  return userName + message;
+};
