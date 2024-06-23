@@ -60,7 +60,14 @@
 // Arrow functions
 
 // I made an anonymous arrow function, which is exported by default and carries no name
-export default (userName, message) => {
-  console.log("Hello");
-  return userName + message;
-};
+// export default (userName, message) => {
+//   console.log("Hello");
+//   return userName + message;
+// };
+
+//Exercise: Working with Functions
+
+// My task is to write a new function that should be named combine and have the following characteristics:
+// 1. Accept three input values
+// 2. Calculate anew value based on the three input values: a * b / c (if a, b & c are the input values)
+// 3. Return the calculated result
