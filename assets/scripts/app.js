@@ -40,19 +40,42 @@
 // }
 
 // This function creates a greeting string now for a user
-function createGreeting(userName, message = "Hello!") {
-  // console.log(userName);
-  // console.log(message);
-  return "Hi, I am " + userName + ". " + message;
-}
+// function createGreeting(userName, message = "Hello!") {
+//   // console.log(userName);
+//   // console.log(message);
+//   return "Hi, I am " + userName + ". " + message;
+// }
 
 // greet(); // Calling or invoking the function greet
 
 // greetUser("Kostas"); // I called the function greetUser and placed 2 input values in it
 // greetUser("George", "Hello, what's up?"); // I called the function greetUser and placed a new set of input values in it
 
-const greeting1 = createGreeting("Kostas"); // I stored the fuction return value in a constant variable for a readability perspective
-console.log(greeting1);
+// const greeting1 = createGreeting("Kostas"); // I stored the fuction return value in a constant variable for a readability perspective
+// console.log(greeting1);
 
-const greeting2 = createGreeting("George", "Hello, what's up?"); // I stored the function return value in a constant variable for a readability perspective
-console.log(greeting2);
+// const greeting2 = createGreeting("George", "Hello, what's up?"); // I stored the function return value in a constant variable for a readability perspective
+// console.log(greeting2);
+
+// Arrow functions
+
+// I made an anonymous arrow function, which is exported by default and carries no name
+// export default (userName, message) => {
+//   console.log("Hello");
+//   return userName + message;
+// };
+
+//Exercise: Working with Functions
+
+// My task is to write a new function that should be named combine and have the following characteristics:
+// 1. Accept three input values
+// 2. Calculate anew value based on the three input values: a * b / c (if a, b & c are the input values)
+// 3. Return the calculated result
+
+function combine(a, b, c) {
+  const result = (a * b) / c; // I made a const variable called result where I placed the the parameters which will be calculated
+  return "The combined number is " + result; // The function when called will return a string plus the result variabels value
+}
+
+const sum = combine(10, 10, 10); // I made a const variable called sum which has as value the combine function where I passed my desired values to the parameters
+console.log(sum); // I will be console logging the value of the sum variable in the console
