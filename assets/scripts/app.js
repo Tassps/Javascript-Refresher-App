@@ -78,4 +78,4 @@ function combine(a, b, c) {
 }
 
 const sum = combine(10, 10, 10); // I made a const variable called sum which has as a value the combine function where I passed my desired values to the parameters
-cons;
+console.log(sum); // I will be console logging the value of the sum variable in the console
