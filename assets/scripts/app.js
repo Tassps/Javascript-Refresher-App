@@ -77,5 +77,5 @@ function combine(a, b, c) {
   return "The combined number is " + result; // The function when called will return a string plus the result variabels value
 }
 
-const sum = combine(10, 10, 10); // I made a const variable called sum which has as a value the combine function where I passed my desired values to the parameters
+const sum = combine(10, 10, 10); // I made a const variable called sum which has as value the combine function where I passed my desired values to the parameters
 console.log(sum); // I will be console logging the value of the sum variable in the console
