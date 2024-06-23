@@ -71,3 +71,8 @@
 // 1. Accept three input values
 // 2. Calculate anew value based on the three input values: a * b / c (if a, b & c are the input values)
 // 3. Return the calculated result
+
+function combine(a, b, c) {
+  const result = (a * b) / c; // I made a const variable called result where I placed the the parameters which will be calculated
+  return "The combined number is " + result; // The function when called will return a string plus the result variabels value
+}
