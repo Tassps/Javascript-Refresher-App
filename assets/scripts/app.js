@@ -99,3 +99,18 @@ const user = {
 
 // console.log(user); // I'm calling the object user in the console
 // console.log(user.name); // I'm accessing the name field of the user object in the console. The . is to access any values in the object
+user.greet();
+
+// I created a blueprint, a class called User, which be later be used to create the actual objects
+class User {
+  // I added a constructor function inside the class, and used it to accept parameters, input values
+  constructor(name, age) {
+    // With the help of this. keyword I store the input values inside properties of the object that will be created based on the class
+    this.name = name;
+    this.age = age;
+  }
+  // The greet method is a part of the blueprint
+  greet() {
+    console.log("Hi!");
+  }
+}
