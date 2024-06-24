@@ -72,10 +72,50 @@
 // 2. Calculate anew value based on the three input values: a * b / c (if a, b & c are the input values)
 // 3. Return the calculated result
 
-function combine(a, b, c) {
-  const result = (a * b) / c; // I made a const variable called result where I placed the the parameters which will be calculated
-  return "The combined number is " + result; // The function when called will return a string plus the result variabels value
+// function combine(a, b, c) {
+//   const result = (a * b) / c; // I made a const variable called result where I placed the the parameters which will be calculated
+//   return "The combined number is " + result; // The function when called will return a string plus the result variabels value
+// }
+
+// const sum = combine(10, 10, 10); // I made a const variable called sum which has as value the combine function where I passed my desired values to the parameters
+// console.log(sum); // I will be console logging the value of the sum variable in the console
+
+// Objects and Classes
+
+// I made an object called user which contains the values of name and age
+// const user = {
+//   name: "Kostas",
+//   age: 30
+// };
+
+const user = {
+  name: "Kostas",
+  age: 30,
+  greet() {
+    console.log("Hello!"); // I made a method called greet inside the object
+    console.log(this.age); // Inside the greet method which bellongs to the user object, I can use the this. keyword to access the properties and methods that bellong to the user object
+  },
+};
+
+// console.log(user); // I'm calling the object user in the console
+// console.log(user.name); // I'm accessing the name field of the user object in the console. The . is to access any values in the object
+user.greet();
+
+// I created a blueprint, a class called User, which be later be used to create the actual objects
+class User {
+  // I added a constructor function inside the class, and used it to accept parameters, input values
+  constructor(name, age) {
+    // With the help of this. keyword I store the parameter values inside properties of the object that will be created based on the class
+    this.name = name;
+    this.age = age;
+  }
+  // The greet method is a part of the blueprint
+  greet() {
+    console.log("Hi!");
+  }
 }
 
-const sum = combine(10, 10, 10); // I made a const variable called sum which has as value the combine function where I passed my desired values to the parameters
-console.log(sum); // I will be console logging the value of the sum variable in the console
+// I'm using the class blueprint by instantiating it with help of the new keyword, which creates a new object based on the User blueprint class.
+const user1 = new User("John", 31);
+console.log(user1);
+user1.greet(); // I called the greet method of the new object, user1, which comes from the blueprint class User
