@@ -118,3 +118,4 @@ class User {
 // I'm using the class blueprint by instantiating it with help of the new keyword, which creates a new object based on the User blueprint class.
 const user1 = new User("John", 31);
 console.log(user1);
+user1.greet(); // I called the greet method of the new object, user1, which comes from the blueprint class User
