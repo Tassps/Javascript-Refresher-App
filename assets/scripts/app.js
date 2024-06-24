@@ -81,3 +81,9 @@
 // console.log(sum); // I will be console logging the value of the sum variable in the console
 
 // Objects and Classes
+
+// I made an object called user which contains the values of name and age
+const user = {
+  name: "Kostas",
+  age: 30,
+};
