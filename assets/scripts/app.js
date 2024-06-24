@@ -87,3 +87,5 @@ const user = {
   name: "Kostas",
   age: 30,
 };
+
+console.log(user); // I'm calling the object user in the console
