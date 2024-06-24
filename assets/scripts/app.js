@@ -105,7 +105,7 @@ user.greet();
 class User {
   // I added a constructor function inside the class, and used it to accept parameters, input values
   constructor(name, age) {
-    // With the help of this. keyword I store the input values inside properties of the object that will be created based on the class
+    // With the help of this. keyword I store the parameter values inside properties of the object that will be created based on the class
     this.name = name;
     this.age = age;
   }
@@ -114,3 +114,7 @@ class User {
     console.log("Hi!");
   }
 }
+
+// I'm using the class blueprint by instantiating it with help of the new keyword, which creates a new object based on the User blueprint class.
+const user1 = new User("John", 31);
+console.log(user1);
