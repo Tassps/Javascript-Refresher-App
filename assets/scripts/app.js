@@ -83,10 +83,19 @@
 // Objects and Classes
 
 // I made an object called user which contains the values of name and age
+// const user = {
+//   name: "Kostas",
+//   age: 30
+// };
+
 const user = {
   name: "Kostas",
   age: 30,
+  greet() {
+    console.log("Hello!"); // I made a method called greet inside the object
+    console.log(this.age);
+  },
 };
 
-console.log(user); // I'm calling the object user in the console
-console.log(user.name); // I'm accessing the name field of the user object in the console. The . is to access any values in the object
+// console.log(user); // I'm calling the object user in the console
+// console.log(user.name); // I'm accessing the name field of the user object in the console. The . is to access any values in the object
