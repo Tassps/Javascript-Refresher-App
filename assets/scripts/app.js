@@ -72,10 +72,12 @@
 // 2. Calculate anew value based on the three input values: a * b / c (if a, b & c are the input values)
 // 3. Return the calculated result
 
-function combine(a, b, c) {
-  const result = (a * b) / c; // I made a const variable called result where I placed the the parameters which will be calculated
-  return "The combined number is " + result; // The function when called will return a string plus the result variabels value
-}
+// function combine(a, b, c) {
+//   const result = (a * b) / c; // I made a const variable called result where I placed the the parameters which will be calculated
+//   return "The combined number is " + result; // The function when called will return a string plus the result variabels value
+// }
 
-const sum = combine(10, 10, 10); // I made a const variable called sum which has as value the combine function where I passed my desired values to the parameters
-console.log(sum); // I will be console logging the value of the sum variable in the console
+// const sum = combine(10, 10, 10); // I made a const variable called sum which has as value the combine function where I passed my desired values to the parameters
+// console.log(sum); // I will be console logging the value of the sum variable in the console
+
+// Objects and Classes
