@@ -89,3 +89,4 @@ const user = {
 };
 
 console.log(user); // I'm calling the object user in the console
+console.log(user.name); // I'm accessing the name field of the user object in the console. The . is to access any values in the object
