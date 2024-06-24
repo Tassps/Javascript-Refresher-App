@@ -93,7 +93,7 @@ const user = {
   age: 30,
   greet() {
     console.log("Hello!"); // I made a method called greet inside the object
-    console.log(this.age);
+    console.log(this.age); // Inside the greet method which bellongs to the user object, I can use the this. keyword to access the properties and methods that bellong to the user object
   },
 };
 
