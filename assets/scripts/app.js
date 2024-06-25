@@ -130,3 +130,7 @@ console.log(hobbies[0]); // I accessing the value with the index 0 in the hobbie
 
 hobbies.push("Gym"); // I'm using the built-in utility method called push for the hobbies array
 console.log(hobbies);
+
+hobbies.findIndex((item) => {
+  return item === "Jogging";
+});
