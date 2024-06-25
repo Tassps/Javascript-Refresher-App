@@ -132,8 +132,11 @@ hobbies.push("Gym"); // I'm using the built-in utility method called push for th
 console.log(hobbies);
 
 // What this code here does is, it executes the function inside the method automatically behind the scenes for every item in the hobbies array, including the "Gym" item.
-const index = hobbies.findIndex((item) => {
-  return item === "Jogging"; // Here, for every item, it compares that item with the help of the comparison operator. If those two are equal, this function returns true.
-});
+// const index = hobbies.findIndex((item) => {
+//   return item === "Jogging"; // Here, for every item, it compares that item with the help of the comparison operator. If those two are equal, this function returns true.
+// });
+
+// I shorten the code above and defined the arrow function inline
+const index = hobbies.findIndex((item) => item === "Jogging");
 
 console.log(index);
