@@ -131,6 +131,7 @@ console.log(hobbies[0]); // I accessing the value with the index 0 in the hobbie
 hobbies.push("Gym"); // I'm using the built-in utility method called push for the hobbies array
 console.log(hobbies);
 
-hobbies.findIndex((item) => {
-  return item === "Jogging";
+// What this code here does is, it executes the function inside the method automatically behind the scenes for every item in the hobbies array, including the "Gym" item.
+const index = hobbies.findIndex((item) => {
+  return item === "Jogging"; // Here, for every item, it compares that item with the help of the comparison operator. If those two are equal, this function returns true.
 });
