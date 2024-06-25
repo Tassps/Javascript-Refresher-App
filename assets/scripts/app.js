@@ -140,3 +140,6 @@ console.log(hobbies);
 const index = hobbies.findIndex((item) => item === "Jogging");
 
 console.log(index);
+
+// The map method allows you to transform every item in an array to another item.
+hobbies.map((item) => item + "!");
