@@ -88,34 +88,64 @@
 //   age: 30
 // };
 
-const user = {
-  name: "Kostas",
-  age: 30,
-  greet() {
-    console.log("Hello!"); // I made a method called greet inside the object
-    console.log(this.age); // Inside the greet method which bellongs to the user object, I can use the this. keyword to access the properties and methods that bellong to the user object
-  },
-};
+// const user = {
+//   name: "Kostas",
+//   age: 30,
+//   greet() {
+//     console.log("Hello!"); // I made a method called greet inside the object
+//     console.log(this.age); // Inside the greet method which bellongs to the user object, I can use the this. keyword to access the properties and methods that bellong to the user object
+//   },
+// };
 
 // console.log(user); // I'm calling the object user in the console
 // console.log(user.name); // I'm accessing the name field of the user object in the console. The . is to access any values in the object
-user.greet();
+// user.greet();
 
 // I created a blueprint, a class called User, which be later be used to create the actual objects
-class User {
-  // I added a constructor function inside the class, and used it to accept parameters, input values
-  constructor(name, age) {
-    // With the help of this. keyword I store the parameter values inside properties of the object that will be created based on the class
-    this.name = name;
-    this.age = age;
-  }
-  // The greet method is a part of the blueprint
-  greet() {
-    console.log("Hi!");
-  }
-}
+// class User {
+//   // I added a constructor function inside the class, and used it to accept parameters, input values
+//   constructor(name, age) {
+//     // With the help of this. keyword I store the parameter values inside properties of the object that will be created based on the class
+//     this.name = name;
+//     this.age = age;
+//   }
+// The greet method is a part of the blueprint
+//   greet() {
+//     console.log("Hi!");
+//   }
+// }
 
 // I'm using the class blueprint by instantiating it with help of the new keyword, which creates a new object based on the User blueprint class.
-const user1 = new User("John", 31);
-console.log(user1);
-user1.greet(); // I called the greet method of the new object, user1, which comes from the blueprint class User
+// const user1 = new User("John", 31);
+// console.log(user1);
+// user1.greet(); // I called the greet method of the new object, user1, which comes from the blueprint class User
+
+// Arrays & Array Methods like map()
+
+// Where objects allow you to group values together with key-values pairs, the idea behind arrays is to have just values, which are stored in a certain order and which can be accessed by their position in that list.
+
+const hobbies = ["Jogging", "Chess", "Series"]; // I made an array of hobbies
+
+console.log(hobbies[0]); // I accessing the value with the index 0 in the hobbies arrray
+
+hobbies.push("Gym"); // I'm using the built-in utility method called push for the hobbies array
+console.log(hobbies);
+
+// What this code here does is, it executes the function inside the method automatically behind the scenes for every item in the hobbies array, including the "Gym" item.
+// const index = hobbies.findIndex((item) => {
+//   return item === "Jogging"; // Here, for every item, it compares that item with the help of the comparison operator. If those two are equal, this function returns true.
+// });
+
+// I shorten the code above and defined the arrow function inline
+const index = hobbies.findIndex((item) => item === "Jogging");
+
+console.log(index);
+
+// The map method allows you to transform every item in an array to another item.
+// const editedHobbies = hobbies.map((item) => item + "!"); // This adds an ! to every string inside the hobbies array, and it returns a new array called editedHobbies.
+
+// In the code below, I can create any kinds of values using map, any objects for any shapes, numbers, strings, booleans, whatever I want.
+// Bellow, in that example, I'll in the end, create a new array that's full of JavaScript objects, where every object has a text key, which value is the value from the old hobbies array.
+const editedHobbies = hobbies.map((item) => ({ text: item }));
+
+console.log(editedHobbies);
