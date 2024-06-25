@@ -135,3 +135,5 @@ console.log(hobbies);
 const index = hobbies.findIndex((item) => {
   return item === "Jogging"; // Here, for every item, it compares that item with the help of the comparison operator. If those two are equal, this function returns true.
 });
+
+console.log(index);
