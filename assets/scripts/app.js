@@ -142,4 +142,10 @@ const index = hobbies.findIndex((item) => item === "Jogging");
 console.log(index);
 
 // The map method allows you to transform every item in an array to another item.
-const editedHobbies = hobbies.map((item) => item + "!"); // This adds an ! to every string inside the hobbies array, and it returns a new array called editedHobbies.
+// const editedHobbies = hobbies.map((item) => item + "!"); // This adds an ! to every string inside the hobbies array, and it returns a new array called editedHobbies.
+
+// In the code below, I can create any kinds of values using map, any objects for any shapes, numbers, strings, booleans, whatever I want.
+// Bellow, in that example, I'll in the end, create a new array that's full of JavaScript objects, where every object has a text key, which value is the value from the old hobbies array.
+const editedHobbies = hobbies.map((item) => ({ text: item }));
+
+console.log(editedHobbies);
