@@ -127,3 +127,6 @@
 const hobbies = ["Jogging", "Chess", "Series"]; // I made an array of hobbies
 
 console.log(hobbies[0]); // I accessing the value with the index 0 in the hobbies arrray
+
+hobbies.push("Gym"); // I'm using the built-in utility method called push for the hobbies array
+console.log(hobbies);
