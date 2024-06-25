@@ -123,3 +123,7 @@
 // Arrays & Array Methods like map()
 
 // Where objects allow you to group values together with key-values pairs, the idea behind arrays is to have just values, which are stored in a certain order and which can be accessed by their position in that list.
+
+const hobbies = ["Jogging", "Chess", "Series"]; // I made an array of hobbies
+
+console.log(hobbies[0]);
