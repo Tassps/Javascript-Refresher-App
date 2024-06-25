@@ -126,4 +126,4 @@
 
 const hobbies = ["Jogging", "Chess", "Series"]; // I made an array of hobbies
 
-console.log(hobbies[0]);
+console.log(hobbies[0]); // I accessing the value with the index 0 in the hobbies arrray
