@@ -149,3 +149,9 @@ console.log(index);
 const editedHobbies = hobbies.map((item) => ({ text: item }));
 
 console.log(editedHobbies);
+
+// Coding exercise 2: Array methods
+
+// My task is to add the missing logic to a transformToObjects() fucntion that should transform a list of numbers into a list of JavaScript objects.
+// In the newly returned array, every object must have a val key and the input array's number as value.
+// For example, for the provided input [1, 2, 3] the transformToObjects([1, 2, 3]) function should return [{val: 1}, {val: 2}, {val: 3}].
