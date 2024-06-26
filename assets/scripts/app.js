@@ -156,6 +156,8 @@ console.log(editedHobbies);
 // In the newly returned array, every object must have a val key and the input array's number as value.
 // For example, for the provided input [1, 2, 3] the transformToObjects([1, 2, 3]) function should return [{val: 1}, {val: 2}, {val: 3}].
 
+// Inside the transformToObjects() function, I used the map() method to transform all values of the received numberArray parameter (which will be an array of numbers).
+// The code bellow uses an arrow function. Of course, I could also use a "normal function" (with the function keyword).
 function transformToObjects(numberArray) {
   return numberArray.map((number) => {
     return { val: number };
