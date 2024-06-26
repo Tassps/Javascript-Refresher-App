@@ -159,6 +159,7 @@ console.log(editedHobbies);
 // Inside the transformToObjects() function, I used the map() method to transform all values of the received numberArray parameter (which will be an array of numbers).
 // The code bellow uses an arrow function. Of course, I could also use a "normal function" (with the function keyword).
 function transformToObjects(numberArray) {
+  // map() takes a function as an argument - this arrow function bellow will be executed for every array item.
   return numberArray.map((number) => {
     return { val: number };
   });
