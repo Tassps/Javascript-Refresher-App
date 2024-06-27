@@ -200,3 +200,5 @@ const name = user.name;
 const age = user.age;
 
 // The code above would work, but again, it can be shorthened.
+
+const 
