@@ -175,3 +175,10 @@ const userNameData = ["Kostas", "Petrakis"];
 
 const firstName = userNameData[0]; // With this I extract the first name of the Array userNameData
 const lastName = userNameData[1]; // with this one I extract the last name of the Array userNameData
+
+// The code above can be shorthened
+// Instead of using the code above to and create new constants, we could create these two constants or variables in one single step.
+
+// By adding [] on the left side of the equal sign below, we shorten it.
+// On the right side, they will create a new Array. On the left side they will destructure that Array, which simply means that the syntax bellow can be used to pull values out of the right side Array.
+const [firstName, lastName] = ["Kostas", "Petrakis"]; // The first constant or variable on the left side will be mapped to the first Array element on the right side, the second one to the second element, and so on.
