@@ -185,3 +185,18 @@ const [firstName, lastName] = ["Kostas", "Petrakis"]; // The first constant or v
 
 console.log(firstName);
 console.log(lastName);
+
+// Now, this destructuring syntax exists also for Objects, not only for Arrays.
+
+// For example, let's say we had a user that looks like the code bellow.
+const user = {
+  name: "Kostas",
+  age: 31,
+};
+
+// Now again, we might want to store the values above in separate constants or variables.
+// For that, of course, we could create again two constants.
+const name = user.name;
+const age = user.age;
+
+// The code above would work, but again, it can be shorthened.
