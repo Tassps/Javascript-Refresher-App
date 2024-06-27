@@ -173,4 +173,5 @@ function transformToObjects(numberArray) {
 const userNameData = ["Kostas", "Petrakis"];
 // In the code above we wanna work with both the first and the last name. For that reason we could create a new constant or variable.
 
-const firstName = userNameData[0];
+const firstName = userNameData[0]; // With this I extract the first name of the Array userNameData
+const lastName = userNameData[1]; // with this one I extract the last name of the Array userNameData
