@@ -124,12 +124,12 @@
 
 // Where objects allow you to group values together with key-values pairs, the idea behind arrays is to have just values, which are stored in a certain order and which can be accessed by their position in that list.
 
-const hobbies = ["Jogging", "Chess", "Series"]; // I made an array of hobbies
+// const hobbies = ["Jogging", "Chess", "Series"]; // I made an array of hobbies
 
-console.log(hobbies[0]); // I accessing the value with the index 0 in the hobbies arrray
+// console.log(hobbies[0]); // I accessing the value with the index 0 in the hobbies arrray
 
-hobbies.push("Gym"); // I'm using the built-in utility method called push for the hobbies array
-console.log(hobbies);
+// hobbies.push("Gym"); // I'm using the built-in utility method called push for the hobbies array
+// console.log(hobbies);
 
 // What this code here does is, it executes the function inside the method automatically behind the scenes for every item in the hobbies array, including the "Gym" item.
 // const index = hobbies.findIndex((item) => {
@@ -137,18 +137,18 @@ console.log(hobbies);
 // });
 
 // I shorten the code above and defined the arrow function inline
-const index = hobbies.findIndex((item) => item === "Jogging");
+// const index = hobbies.findIndex((item) => item === "Jogging");
 
-console.log(index);
+// console.log(index);
 
 // The map method allows you to transform every item in an array to another item.
 // const editedHobbies = hobbies.map((item) => item + "!"); // This adds an ! to every string inside the hobbies array, and it returns a new array called editedHobbies.
 
 // In the code below, I can create any kinds of values using map, any objects for any shapes, numbers, strings, booleans, whatever I want.
 // Bellow, in that example, I'll in the end, create a new array that's full of JavaScript objects, where every object has a text key, which value is the value from the old hobbies array.
-const editedHobbies = hobbies.map((item) => ({ text: item }));
+// const editedHobbies = hobbies.map((item) => ({ text: item }));
 
-console.log(editedHobbies);
+// console.log(editedHobbies);
 
 // Coding exercise 2: Array methods
 
@@ -158,9 +158,60 @@ console.log(editedHobbies);
 
 // Inside the transformToObjects() function, I used the map() method to transform all values of the received numberArray parameter (which will be an array of numbers).
 // The code bellow uses an arrow function. Of course, I could also use a "normal function" (with the function keyword).
-function transformToObjects(numberArray) {
-  // map() takes a function as an argument - this arrow function bellow will be executed for every array item.
-  return numberArray.map((number) => {
-    return { val: number };
-  });
-}
+// function transformToObjects(numberArray) {
+// map() takes a function as an argument - this arrow function bellow will be executed for every array item.
+//   return numberArray.map((number) => {
+//     return { val: number };
+//   });
+// }
+
+// Destucturing
+
+// Related to Arrays and Objects, there are two crucial, relatively new and modern JavaScript features.
+// The first feature is about destructuring Arrays and Objects.
+
+// const userNameData = ["Kostas", "Petrakis"];
+// In the code above we wanna work with both the first and the last name. For that reason we could create a new constant or variable.
+
+// const firstName = userNameData[0]; // With this I extract the first name of the Array userNameData
+// const lastName = userNameData[1]; // with this one I extract the last name of the Array userNameData
+
+// The code above can be shorthened
+// Instead of using the code above to and create new constants, we could create these two constants or variables in one single step.
+
+// By adding [] on the left side of the equal sign below, we shorten it.
+// On the right side, they will create a new Array. On the left side they will destructure that Array, which simply means that the syntax bellow can be used to pull values out of the right side Array.
+// const [firstName, lastName] = ["Kostas", "Petrakis"]; // The first constant or variable on the left side will be mapped to the first Array element on the right side, the second one to the second element, and so on.
+
+// console.log(firstName);
+// console.log(lastName);
+
+// Now, this destructuring syntax exists also for Objects, not only for Arrays.
+
+// For example, let's say we had a user that looks like the code bellow.
+// const user = {
+//   name: "Kostas",
+//   age: 31,
+// };
+
+// Now again, we might want to store the values above in separate constants or variables.
+// For that, of course, we could create again two constants.
+// const name = user.name;
+// const age = user.age;
+
+// The code above would work, but again, it can be shorthened, destructured.
+// In the case bellow, since we're dealing with an object, we write {} on the left side of the equal sign.
+// On the right side, the {} will be used to create an object. On the left side, the {} are used for destructuring. The same way as we used the [] for destructuring an Array before.
+
+// On the left side of the equal now, I can pull out name and age. Though, these names are now not up to me.
+// Instead I have to use the field names that are defined in the object.
+// For the Array destructuring above, these names were up to me because the elements were pulled out by position.
+// For the Object they are pulled by name, so by property name. And therefore I have to use the same property names in the {} on the left side.
+// Though, I could assign an alias by using a colon and then defining my alias name on the right side of the colon {name: userName}.
+const { name: userName, age } = {
+  name: "Kostas",
+  age: 31,
+};
+
+console.log(userName);
+console.log(age);
