@@ -171,3 +171,6 @@ function transformToObjects(numberArray) {
 // The first feature is about destructuring Arrays and Objects.
 
 const userNameData = ["Kostas", "Petrakis"];
+// In the code above we wanna work with both the first and the last name. For that reason we could create a new constant or variable.
+
+const firstName = userNameData[0];
