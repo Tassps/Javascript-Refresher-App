@@ -207,8 +207,8 @@ const age = user.age;
 // Instead I have to use the field names that are defined in the object.
 // For the Array destructuring above, these names were up to me because the elements were pulled out by position.
 // For the Object they are pulled by name, so by property name. And therefore I have to use the same property names in the {} on the left side.
-
-const { name, age } = {
+// Though, I could assign an alias by using a colon and then defining my alias name on the right side of the colon {name: userName}.
+const { name: userName, age } = {
   name: "Kostas",
   age: 31,
 };
