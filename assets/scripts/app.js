@@ -199,6 +199,16 @@ const user = {
 const name = user.name;
 const age = user.age;
 
-// The code above would work, but again, it can be shorthened.
+// The code above would work, but again, it can be shorthened, destructured.
+// In the case bellow, since we're dealing with an object, we write {} on the left side of the equal sign.
+// On the right side, the {} will be used to create an object. On the left side, the {} are used for destructuring. The same way as we used the [] for destructuring an Array before.
 
-const 
+// On the left side of the equal now, I can pull out name and age. Though, these names are now not up to me.
+// Instead I have to use the field names that are defined in the object.
+// For the Array destructuring above, these names were up to me because the elements were pulled out by position.
+// For the Object they are pulled by name, so by property name. And therefore I have to use the same property names in the {} on the left side.
+
+const { name, age } = {
+  name: "Kostas",
+  age: 31,
+};
