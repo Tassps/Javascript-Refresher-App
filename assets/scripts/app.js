@@ -164,3 +164,8 @@ function transformToObjects(numberArray) {
     return { val: number };
   });
 }
+
+// Destucturing
+
+// Related to Arrays and Objects, there are two crucial, relatively new and modern JavaScript features.
+// The first feature is about destructuring Arrays and Objects.
