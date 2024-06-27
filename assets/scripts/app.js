@@ -181,23 +181,23 @@
 
 // By adding [] on the left side of the equal sign below, we shorten it.
 // On the right side, they will create a new Array. On the left side they will destructure that Array, which simply means that the syntax bellow can be used to pull values out of the right side Array.
-const [firstName, lastName] = ["Kostas", "Petrakis"]; // The first constant or variable on the left side will be mapped to the first Array element on the right side, the second one to the second element, and so on.
+// const [firstName, lastName] = ["Kostas", "Petrakis"]; // The first constant or variable on the left side will be mapped to the first Array element on the right side, the second one to the second element, and so on.
 
-console.log(firstName);
-console.log(lastName);
+// console.log(firstName);
+// console.log(lastName);
 
 // Now, this destructuring syntax exists also for Objects, not only for Arrays.
 
 // For example, let's say we had a user that looks like the code bellow.
-const user = {
-  name: "Kostas",
-  age: 31,
-};
+// const user = {
+//   name: "Kostas",
+//   age: 31,
+// };
 
 // Now again, we might want to store the values above in separate constants or variables.
 // For that, of course, we could create again two constants.
-const name = user.name;
-const age = user.age;
+// const name = user.name;
+// const age = user.age;
 
 // The code above would work, but again, it can be shorthened, destructured.
 // In the case bellow, since we're dealing with an object, we write {} on the left side of the equal sign.
@@ -212,3 +212,6 @@ const { name: userName, age } = {
   name: "Kostas",
   age: 31,
 };
+
+console.log(userName);
+console.log(age);
