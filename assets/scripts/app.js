@@ -231,10 +231,13 @@ function storeOrder(order) {
 // localStorage is a web storage object that allows me to save key/value pairs in a web browser. Data stored here persists even when the browser is closed and reopened.
 
 // Instead of accessing the order properties via the "dot notation" inside the storeOrder function body, I could use destructuring like this:
+// I defined a function called storeOrder again to store an order's details in local storage
 function storeOrder({ id, currency }) {
-  // destructuring
-  localStorage.setItem("id", id);
-  localStorage.setItem("currency", currency);
+  // Destructuring
+  // The line above extracts the 'id' and 'currency' properties from the passed object directly
+  localStorage.setItem("id", id); // I store the id in local storage under the key "id"
+  localStorage.setItem("currency", currency); // I store the currency in local storage under the key "currency"
 }
 // The destructuring syntax is the same as I did in the previous examples - just without creating a constant or variable manually.
-// Instead, id and curency are "pulled out" of the incoming object
+// Instead, id and curency are "pulled out" of the incoming object (i.e., the object passed as an argument to storeOrder).
+// It's very important to understand, that storeOrder still only takes one parameter on the example above! It does not accept two parameters.Instead, it's one single parameter - an object which then just is destructured internally.
