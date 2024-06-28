@@ -223,8 +223,18 @@
 // Locally scoped variables, meaning variables only available inside the function body.
 // Bellow I will present an example:
 
+// I define a function called storeOrder that takes one parameter (order)
 function storeOrder(order) {
-  localStorage.setItem("id", order.id);
-  localStorage.setItem("curency", order.currency);
+  localStorage.setItem("id", order.id); // In this line, I store the id property of the order object in the browser's local storage. The setItem method is used to save the data with the key "id".
+  localStorage.setItem("curency", order.currency); // In this line, I store the currency property of the order object in the browser's local storage. The setItem method is used to save the data with the key "currency".
 }
-// Instead rw
+// localStorage is a web storage object that allows me to save key/value pairs in a web browser. Data stored here persists even when the browser is closed and reopened.
+
+// Instead of accessing the order properties via the "dot notation" inside the storeOrder function body, I could use destructuring like this:
+function storeOrder({ id, currency }) {
+  // destructuring
+  localStorage.setItem("id", id);
+  localStorage.setItem("currency", currency);
+}
+// The destructuring syntax is the same as I did in the previous examples - just without creating a constant or variable manually.
+// Instead, id and curency are "pulled out" of the incoming object
