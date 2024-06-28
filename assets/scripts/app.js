@@ -208,10 +208,23 @@
 // For the Array destructuring above, these names were up to me because the elements were pulled out by position.
 // For the Object they are pulled by name, so by property name. And therefore I have to use the same property names in the {} on the left side.
 // Though, I could assign an alias by using a colon and then defining my alias name on the right side of the colon {name: userName}.
-const { name: userName, age } = {
-  name: "Kostas",
-  age: 31,
-};
+// const { name: userName, age } = {
+//   name: "Kostas",
+//   age: 31,
+// };
 
-console.log(userName);
-console.log(age);
+// console.log(userName);
+// console.log(age);
+
+// Destructuring in Function Parameter Lists
+
+// The destructuring syntax explained in the previous examples can also be used in function parameter lists.
+// For example, if a function accepts a parameter that will contain an object it can be destructured to "pull out" the object properties and make them available as locally scoped variables.
+// Locally scoped variables, meaning variables only available inside the function body.
+// Bellow I will present an example:
+
+function storeOrder(order) {
+  localStorage.setItem("id", order.id);
+  localStorage.setItem("curency", order.currency);
+}
+// Instead
