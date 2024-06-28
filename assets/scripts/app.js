@@ -241,3 +241,9 @@ function storeOrder({ id, currency }) {
 // The destructuring syntax is the same as I did in the previous examples - just without creating a constant or variable manually.
 // Instead, id and curency are "pulled out" of the incoming object (i.e., the object passed as an argument to storeOrder).
 // It's very important to understand, that storeOrder still only takes one parameter on the example above! It does not accept two parameters.Instead, it's one single parameter - an object which then just is destructured internally.
+
+//Finally, the function above would be called like this:
+storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency from the provided object.
+// The argument passed to storeOrder function is an object with properties: id and currency. The argument is an object literal.
+// Although the object contains multiple properties, it is still considered a single argument because it is a single object.
+// In JavaScript, functions can accept objects as arguments, which allows me to pass multiple related values together.
