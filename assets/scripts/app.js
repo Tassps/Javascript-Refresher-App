@@ -227,4 +227,4 @@ function storeOrder(order) {
   localStorage.setItem("id", order.id);
   localStorage.setItem("curency", order.currency);
 }
-// Instead
+// Instead rw
