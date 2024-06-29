@@ -261,7 +261,8 @@ const newHobbies = ["Philosophy"];
 // Insde the [] I'm using the special spread operator which looks like this [...].
 // The 3 dots ... is a JavaScript syntax. Next to them I will add the name of the first array I wanna merge into the new Array.
 
-const mergedHobbies = [...hobbies]; // These three dots will pull out all the elements of the hobbies Array, and add them as separate, comma separated values to this new list.
+// const mergedHobbies = [...hobbies]; // These three dots will pull out all the elements of the hobbies Array, and add them as separate, comma separated values to this new list.
 
+// If I would just add hobbies, and new hobbies like in the example bellow, I would get a new Array, which when output to the console, will look like an Array with two nested arrays inside it.
 const mergedHobbies = [hobbies, newHobbies];
 console.log(mergedHobbies);
