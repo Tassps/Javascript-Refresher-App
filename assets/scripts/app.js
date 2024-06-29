@@ -269,4 +269,12 @@ const newHobbies = ["Philosophy"];
 
 // If instead I use the ... in front of the arrays to use this spread operator, I will pull out the values from the Arrays hobbies and newHobbies and add them as standalone values to the mergedHobbies Array.
 const mergedHobbies = [...hobbies, ...newHobbies];
-console.log(mergedHobbies); 
+console.log(mergedHobbies);
+
+// I can also use the spread operator on objects.
+// For example on the user and extendUser objects.
+
+const user = {
+  name: "Kostas",
+  age: 30,
+};
