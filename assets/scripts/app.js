@@ -252,3 +252,5 @@ storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency
 
 // Now, the other crucial concept that's related to array and objects about which I should know is the special spread operator that exists in JavaScript.
 // For that, I will be merging for an example two hobbies lists.
+
+const hobbies = ["Basketball", "Singing"];
