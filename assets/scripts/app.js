@@ -264,5 +264,9 @@ const newHobbies = ["Philosophy"];
 // const mergedHobbies = [...hobbies]; // These three dots will pull out all the elements of the hobbies Array, and add them as separate, comma separated values to this new list.
 
 // If I would just add hobbies, and new hobbies like in the example bellow, I would get a new Array, which when output to the console, will look like an Array with two nested arrays inside it.
-const mergedHobbies = [hobbies, newHobbies];
-console.log(mergedHobbies);
+// const mergedHobbies = [hobbies, newHobbies];
+// console.log(mergedHobbies);
+
+// If instead I use the ... in front of the arrays to use this spread operator, I will pull out the values from the Arrays hobbies and newHobbies and add them as standalone values to the mergedHobbies Array.
+const mergedHobbies = [...hobbies, ...newHobbies];
+console.log(mergedHobbies); 
