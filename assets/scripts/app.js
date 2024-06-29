@@ -272,14 +272,17 @@ const mergedHobbies = [...hobbies, ...newHobbies];
 console.log(mergedHobbies);
 
 // I can also use the spread operator on objects.
-// For example on the user and extendUser objects.
+// For example on the user and extendedUser objects.
 
 const user = {
   name: "Kostas",
   age: 30,
 };
 
-const extendUser = {
+// Bellow, the spread operator will pull out all the key vallue pairs from the user object, and add them as key values pairs to the extendedUser object.
+const extendedUser = {
   isAdmin: true,
   ...user,
 };
+
+console.log(extendedUser);
