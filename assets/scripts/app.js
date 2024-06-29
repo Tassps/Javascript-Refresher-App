@@ -278,3 +278,8 @@ const user = {
   name: "Kostas",
   age: 30,
 };
+
+const extendUser = {
+  isAdmin: true,
+  ...user,
+};
