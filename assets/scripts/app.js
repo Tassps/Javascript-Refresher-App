@@ -247,3 +247,8 @@ storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency
 // The argument passed to storeOrder function is an object with properties: id and currency. The argument is an object literal.
 // Although the object contains multiple properties, it is still considered a single argument because it is a single object.
 // In JavaScript, functions can accept objects as arguments, which allows me to pass multiple related values together.
+
+// Spread operator
+
+// Now, the other crucial concept that's related to array and objects about which I should know is the special spread operator that exists in JavaScript.
+// For that, I will be merging for an example two hobbies lists.
