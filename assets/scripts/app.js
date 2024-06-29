@@ -256,3 +256,7 @@ storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency
 const hobbies = ["Basketball", "Singing"];
 
 const newHobbies = ["Philosophy"];
+
+// If I would want to create a merged list, I could do that by creating a new list with the [].
+// Insde the [] I'm using the special spread operator which looks like this [...].
+// The 3 dots ... is a JavaScript syntax. Next to them I will add the name of the first array I wanna merge into the new Array.
