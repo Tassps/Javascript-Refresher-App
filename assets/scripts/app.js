@@ -254,3 +254,5 @@ storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency
 // For that, I will be merging for an example two hobbies lists.
 
 const hobbies = ["Basketball", "Singing"];
+
+const newHobbies = ["Philosophy"];
