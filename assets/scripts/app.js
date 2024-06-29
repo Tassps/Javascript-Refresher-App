@@ -264,3 +264,4 @@ const newHobbies = ["Philosophy"];
 const mergedHobbies = [...hobbies]; // These three dots will pull out all the elements of the hobbies Array, and add them as separate, comma separated values to this new list.
 
 const mergedHobbies = [hobbies, newHobbies];
+console.log(mergedHobbies);
