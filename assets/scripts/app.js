@@ -247,3 +247,42 @@ storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency
 // The argument passed to storeOrder function is an object with properties: id and currency. The argument is an object literal.
 // Although the object contains multiple properties, it is still considered a single argument because it is a single object.
 // In JavaScript, functions can accept objects as arguments, which allows me to pass multiple related values together.
+
+// Spread operator
+
+// Now, the other crucial concept that's related to array and objects about which I should know is the special spread operator that exists in JavaScript.
+// For that, I will be merging for an example two hobbies lists.
+
+const hobbies = ["Basketball", "Singing"];
+
+const newHobbies = ["Philosophy"];
+
+// If I would want to create a merged list, I could do that by creating a new list with the [].
+// Insde the [] I'm using the special spread operator which looks like this [...].
+// The 3 dots ... is a JavaScript syntax. Next to them I will add the name of the first array I wanna merge into the new Array.
+
+// const mergedHobbies = [...hobbies]; // These three dots will pull out all the elements of the hobbies Array, and add them as separate, comma separated values to this new list.
+
+// If I would just add hobbies, and new hobbies like in the example bellow, I would get a new Array, which when output to the console, will look like an Array with two nested arrays inside it.
+// const mergedHobbies = [hobbies, newHobbies];
+// console.log(mergedHobbies);
+
+// If instead I use the ... in front of the arrays to use this spread operator, I will pull out the values from the Arrays hobbies and newHobbies and add them as standalone values to the mergedHobbies Array.
+const mergedHobbies = [...hobbies, ...newHobbies];
+console.log(mergedHobbies);
+
+// I can also use the spread operator on objects.
+// For example on the user and extendedUser objects.
+
+const user = {
+  name: "Kostas",
+  age: 30,
+};
+
+// Bellow, the spread operator will pull out all the key vallue pairs from the user object, and add them as key values pairs to the extendedUser object.
+const extendedUser = {
+  isAdmin: true,
+  ...user,
+};
+
+console.log(extendedUser);
