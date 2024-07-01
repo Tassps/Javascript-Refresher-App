@@ -313,16 +313,16 @@ if (10 === 10) {
 // So, with the constant above I'm now fetching the "Mine password" and I could now check if the password is equal.
 // For example:
 
-if (password === "Hello") {
-  // Here I check if the password is equal to "Hello" and I log it into the console if that's the case.
-  console.log("Hello works");
-} else if (password === "hello") {
-  // If the first condition doesn't met, I check here in the second one if the password is equal to "hello" and log it into the console.
-  console.log("hello works");
-} else {
-  // If the second condition is not the case too, then here I execute a fallback code where I say "Access not granted.".
-  console.log("Access not granted.");
-}
+// if (password === "Hello") {
+//   // Here I check if the password is equal to "Hello" and I log it into the console if that's the case.
+//   console.log("Hello works");
+// } else if (password === "hello") {
+//   // If the first condition doesn't met, I check here in the second one if the password is equal to "hello" and log it into the console.
+//   console.log("hello works");
+// } else {
+//   // If the second condition is not the case too, then here I execute a fallback code where I say "Access not granted.".
+//   console.log("Access not granted.");
+// }
 
 // For loop
 
@@ -335,6 +335,8 @@ const hobbies = ["Gym", "Chess"];
 // Now, if I want to execute some code, for every entry of the hobbies Array, I will create a for loop.
 // For example:
 
+// I create a constant called hobby that will be recreated for every iteration of that for loop.
 for (const hobby of hobbies) {
+  // With the special of keyword, I tell JavaScript that it should create a new constant for every item in the hobbies Array and it should execute the code between the {} as often as needed to go through all the elements of the hobbies Array. So 2 times.
   console.log(hobby);
 }
