@@ -331,3 +331,10 @@ if (password === "Hello") {
 // For example:
 
 const hobbies = ["Gym", "Chess"];
+
+// Now, if I want to execute some code, for every entry of the hobbies Array, I will create a for loop.
+// For example:
+
+for (const hobby of hobbies) {
+  console.log(hobby);
+}
