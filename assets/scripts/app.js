@@ -303,4 +303,8 @@ if (10 === 10) {
 } else {
 }
 
-// Now of course, checking for hard-coded values like in the example above makes absolutely no sense. The first condition will always be true a
+// Now of course, checking for hard-coded values like in the example above makes absolutely no sense. The first condition will always be true for example.
+// Instead, typically, of course, I'll use if statements to check content I don't know in advance.
+// For example bellow:
+
+const password = prompt(); // Here, I can get some dummy password by using the built-in prompt funciton. This a function provided by the browser which will prompt the user for input.
