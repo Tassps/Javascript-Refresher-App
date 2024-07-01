@@ -290,6 +290,7 @@
 // Control structures
 
 // if statements
+// if statement is called a control structure which code gets executed
 // The idea here is that I compare values and then I execute the code inside of the if statement only if this condition is met.
 // Now the if statement also allows me to add an else statement to define the code that should be executed if the condition is not met.
 // It also allows me to add else if statements if I want to check for more condintions if the first condition wasn't met.
