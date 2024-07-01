@@ -313,9 +313,12 @@ const password = prompt("Mine password"); // Here, I can get some dummy password
 // For example:
 
 if (password === "Hello") {
+  // Here I check if the password is equal to "Hello" and I log it into the console if that's the case.
   console.log("Hello works");
 } else if (password === "hello") {
+  // If the first condition doesn't met, I check here in the second one if the password is equal to "hello" and log it into the console.
   console.log("hello works");
 } else {
+  // If the second condition is not the case too, then here I execute a fallback code where I say "Access not granted.".
   console.log("Access not granted.");
 }
