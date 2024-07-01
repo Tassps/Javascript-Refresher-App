@@ -327,4 +327,7 @@ if (password === "Hello") {
 // For loop
 
 // JavaScript knows different types of for loops, but in the example here I will code the for loop where I loop through an Array.
+// For loops are about executing the same piece of code multiple times.
 // For example:
+
+const hobbies = ["Gym", "Chess"];
