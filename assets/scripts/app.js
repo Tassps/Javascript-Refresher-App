@@ -338,5 +338,5 @@ const hobbies = ["Gym", "Chess"];
 // I create a constant called hobby that will be recreated for every iteration of that for loop.
 for (const hobby of hobbies) {
   // With the special of keyword, I tell JavaScript that it should create a new constant for every item in the hobbies Array and it should execute the code between the {} as often as needed to go through all the elements of the hobbies Array. So 2 times.
-  console.log(hobby);
+  console.log(hobby); // In the console I will see "Gym" and "Chess" being output, because of this line of code being executed multiple times.
 }
