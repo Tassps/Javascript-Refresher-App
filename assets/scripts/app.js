@@ -308,7 +308,7 @@ if (10 === 10) {
 // Instead, typically, of course, I'll use if statements to check content I don't know in advance.
 // For example bellow:
 
-const password = prompt("Mine password"); // Here, I can get some dummy password by using the built-in prompt funciton. This a function provided by the browser which will prompt the user for input.
+// const password = prompt("Mine password"); // Here, I can get some dummy password by using the built-in prompt funciton. This a function provided by the browser which will prompt the user for input.
 
 // So, with the constant above I'm now fetching the "Mine password" and I could now check if the password is equal.
 // For example:
@@ -323,3 +323,8 @@ if (password === "Hello") {
   // If the second condition is not the case too, then here I execute a fallback code where I say "Access not granted.".
   console.log("Access not granted.");
 }
+
+// For loop
+
+// JavaScript knows different types of for loops, but in the example here I will code the for loop where I loop through an Array.
+// For example:
