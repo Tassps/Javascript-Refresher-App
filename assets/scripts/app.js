@@ -303,4 +303,4 @@ if (10 === 10) {
 } else {
 }
 
-// Now of course, checking for hard-coded values like in the example above makes absolutely no sense. The first condition will always be true
+// Now of course, checking for hard-coded values like in the example above makes absolutely no sense. The first condition will always be true a
