@@ -224,26 +224,26 @@
 // Bellow I will present an example:
 
 // I define a function called storeOrder that takes one parameter (order)
-function storeOrder(order) {
-  localStorage.setItem("id", order.id); // In this line, I store the id property of the order object in the browser's local storage. The setItem method is used to save the data with the key "id".
-  localStorage.setItem("curency", order.currency); // In this line, I store the currency property of the order object in the browser's local storage. The setItem method is used to save the data with the key "currency".
-}
+// function storeOrder(order) {
+//   localStorage.setItem("id", order.id); // In this line, I store the id property of the order object in the browser's local storage. The setItem method is used to save the data with the key "id".
+//   localStorage.setItem("curency", order.currency); // In this line, I store the currency property of the order object in the browser's local storage. The setItem method is used to save the data with the key "currency".
+// }
 // localStorage is a web storage object that allows me to save key/value pairs in a web browser. Data stored here persists even when the browser is closed and reopened.
 
 // Instead of accessing the order properties via the "dot notation" inside the storeOrder function body, I could use destructuring like this:
 // I defined a function called storeOrder again to store an order's details in local storage
-function storeOrder({ id, currency }) {
-  // Destructuring
-  // The line above extracts the 'id' and 'currency' properties from the passed object directly
-  localStorage.setItem("id", id); // I store the id in local storage under the key "id"
-  localStorage.setItem("currency", currency); // I store the currency in local storage under the key "currency"
-}
+// function storeOrder({ id, currency }) {
+// Destructuring
+// The line above extracts the 'id' and 'currency' properties from the passed object directly
+//   localStorage.setItem("id", id); // I store the id in local storage under the key "id"
+//   localStorage.setItem("currency", currency); // I store the currency in local storage under the key "currency"
+// }
 // The destructuring syntax is the same as I did in the previous examples - just without creating a constant or variable manually.
 // Instead, id and curency are "pulled out" of the incoming object (i.e., the object passed as an argument to storeOrder).
 // It's very important to understand, that storeOrder still only takes one parameter on the example above! It does not accept two parameters.Instead, it's one single parameter - an object which then just is destructured internally.
 
 //Finally, the function above would be called like this:
-storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency from the provided object.
+// storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency from the provided object.
 // The argument passed to storeOrder function is an object with properties: id and currency. The argument is an object literal.
 // Although the object contains multiple properties, it is still considered a single argument because it is a single object.
 // In JavaScript, functions can accept objects as arguments, which allows me to pass multiple related values together.
@@ -253,9 +253,9 @@ storeOrder({ id: 5, currency: "USD" }); // The function extracts id and currency
 // Now, the other crucial concept that's related to array and objects about which I should know is the special spread operator that exists in JavaScript.
 // For that, I will be merging for an example two hobbies lists.
 
-const hobbies = ["Basketball", "Singing"];
+// const hobbies = ["Basketball", "Singing"];
 
-const newHobbies = ["Philosophy"];
+// const newHobbies = ["Philosophy"];
 
 // If I would want to create a merged list, I could do that by creating a new list with the [].
 // Insde the [] I'm using the special spread operator which looks like this [...].
@@ -268,21 +268,75 @@ const newHobbies = ["Philosophy"];
 // console.log(mergedHobbies);
 
 // If instead I use the ... in front of the arrays to use this spread operator, I will pull out the values from the Arrays hobbies and newHobbies and add them as standalone values to the mergedHobbies Array.
-const mergedHobbies = [...hobbies, ...newHobbies];
-console.log(mergedHobbies);
+// const mergedHobbies = [...hobbies, ...newHobbies];
+// console.log(mergedHobbies);
 
 // I can also use the spread operator on objects.
 // For example on the user and extendedUser objects.
 
-const user = {
-  name: "Kostas",
-  age: 30,
-};
+// const user = {
+//   name: "Kostas",
+//   age: 30,
+// };
 
 // Bellow, the spread operator will pull out all the key vallue pairs from the user object, and add them as key values pairs to the extendedUser object.
-const extendedUser = {
-  isAdmin: true,
-  ...user,
-};
+// const extendedUser = {
+//   isAdmin: true,
+//   ...user,
+// };
 
-console.log(extendedUser);
+// console.log(extendedUser);
+
+// Control structures
+
+// if statements
+// if statement is called a control structure which code gets executed
+// The idea here is that I compare values and then I execute the code inside of the if statement only if this condition is met.
+// Now the if statement also allows me to add an else statement to define the code that should be executed if the condition is not met.
+// It also allows me to add else if statements if I want to check for more condintions if the first condition wasn't met.
+// And I can add as many else if statements there as I want, but only one else branch.
+
+if (10 === 10) {
+  //...
+} else if (5 === 5) {
+  //...
+} else if (2 === 2) {
+} else {
+}
+
+// Now of course, checking for hard-coded values like in the example above makes absolutely no sense. The first condition will always be true for example.
+// Instead, typically, of course, I'll use if statements to check content I don't know in advance.
+// For example bellow:
+
+// const password = prompt("Mine password"); // Here, I can get some dummy password by using the built-in prompt funciton. This a function provided by the browser which will prompt the user for input.
+
+// So, with the constant above I'm now fetching the "Mine password" and I could now check if the password is equal.
+// For example:
+
+// if (password === "Hello") {
+//   // Here I check if the password is equal to "Hello" and I log it into the console if that's the case.
+//   console.log("Hello works");
+// } else if (password === "hello") {
+//   // If the first condition doesn't met, I check here in the second one if the password is equal to "hello" and log it into the console.
+//   console.log("hello works");
+// } else {
+//   // If the second condition is not the case too, then here I execute a fallback code where I say "Access not granted.".
+//   console.log("Access not granted.");
+// }
+
+// For loop
+
+// JavaScript knows different types of for loops, but in the example here I will code the for loop where I loop through an Array.
+// For loops are about executing the same piece of code multiple times.
+// For example:
+
+const hobbies = ["Gym", "Chess"];
+
+// Now, if I want to execute some code, for every entry of the hobbies Array, I will create a for loop.
+// For example:
+
+// I create a constant called hobby that will be recreated for every iteration of that for loop.
+for (const hobby of hobbies) {
+  // With the special of keyword, I tell JavaScript that it should create a new constant for every item in the hobbies Array and it should execute the code between the {} as often as needed to go through all the elements of the hobbies Array. So 2 times.
+  console.log(hobby); // In the console I will see "Gym" and "Chess" being output, because of this line of code being executed multiple times.
+}
