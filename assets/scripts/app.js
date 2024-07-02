@@ -356,3 +356,4 @@ const handleTimeout2 = () => {
 // And now I can also pass the first function or the constant that contains a function as a value. For example:
 
 setTimeout(handleTimeout, 2000);
+setTimeout(handleTimeout2, 3000);
