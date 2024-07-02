@@ -359,3 +359,7 @@ setTimeout(handleTimeout, 2000); // In this line I omit the parantheses here "ha
 // The second argument defines the number of milliseconds JavaScript should wait until it executes the function which is the first argument.
 
 setTimeout(handleTimeout2, 3000); // I do the same with the function handleTimeout2.
+
+setTimeout(() => {
+  console.log("More timing out...");
+}, 4000);
