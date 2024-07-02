@@ -296,13 +296,13 @@
 // It also allows me to add else if statements if I want to check for more condintions if the first condition wasn't met.
 // And I can add as many else if statements there as I want, but only one else branch.
 
-if (10 === 10) {
-  //...
-} else if (5 === 5) {
-  //...
-} else if (2 === 2) {
-} else {
-}
+// if (10 === 10) {
+//   //...
+// } else if (5 === 5) {
+//   //...
+// } else if (2 === 2) {
+// } else {
+// }
 
 // Now of course, checking for hard-coded values like in the example above makes absolutely no sense. The first condition will always be true for example.
 // Instead, typically, of course, I'll use if statements to check content I don't know in advance.
@@ -330,13 +330,13 @@ if (10 === 10) {
 // For loops are about executing the same piece of code multiple times.
 // For example:
 
-const hobbies = ["Gym", "Chess"];
+// const hobbies = ["Gym", "Chess"];
 
 // Now, if I want to execute some code, for every entry of the hobbies Array, I will create a for loop.
 // For example:
 
 // I create a constant called hobby that will be recreated for every iteration of that for loop.
-for (const hobby of hobbies) {
-  // With the special of keyword, I tell JavaScript that it should create a new constant for every item in the hobbies Array and it should execute the code between the {} as often as needed to go through all the elements of the hobbies Array. So 2 times.
-  console.log(hobby); // In the console I will see "Gym" and "Chess" being output, because of this line of code being executed multiple times.
-}
+// for (const hobby of hobbies) {
+// With the special of keyword, I tell JavaScript that it should create a new constant for every item in the hobbies Array and it should execute the code between the {} as often as needed to go through all the elements of the hobbies Array. So 2 times.
+//   console.log(hobby); // In the console I will see "Gym" and "Chess" being output, because of this line of code being executed multiple times.
+// }
