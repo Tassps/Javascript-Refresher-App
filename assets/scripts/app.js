@@ -355,5 +355,7 @@ const handleTimeout2 = () => {
 
 // And now I can also pass the first function or the constant that contains a function as a value. For example:
 
-setTimeout(handleTimeout, 2000);
-setTimeout(handleTimeout2, 3000);
+setTimeout(handleTimeout, 2000); // In this line I omit the parantheses here "handleTimeout()", because I don't want to execute this function right away. I instead pass the function as a value to setTimeout.
+// The second argument defines the number of milliseconds JavaScript should wait until it executes the function which is the first argument.
+
+setTimeout(handleTimeout2, 3000); // I do the same with the function handleTimeout2.
