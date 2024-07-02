@@ -365,11 +365,13 @@ setTimeout(() => {
   console.log("More timing out...");
 }, 4000);
 
-// I can also pass functions as values to functions that I build, and that are not necessarily built-in function like setTimeout.
+// I can also pass functions as values to functions that I build, and that are not necessarily built-in functions like setTimeout.
 // For example:
 
 function greeter(greetFn) {
-  greetFn();
+  // greeter function here accepts a greet function parameter, so a regular parameter in the end, but a parameter which expects to get a function as value.
+  greetFn(); // Inside of greeter I can execute  greet function like this, calling it as a function by adding ().
 }
 
-greeter(() => console.log("Hi"));
+greeter(() => console.log("Hi")); // The arrow function is being executed because I'm passing it as value for the greetFn parameter to the greeter function.
+// And inside of that greeter function I'm then executing the greetFn parameter, the value that's received on that parameter, which is the arrow function.
