@@ -371,3 +371,5 @@ setTimeout(() => {
 function greeter(greetFn) {
   greetFn();
 }
+
+greeter(() => console.log("Hi"));
