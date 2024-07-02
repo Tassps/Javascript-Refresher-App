@@ -364,3 +364,10 @@ setTimeout(() => {
   // Here, I essentialy do the same as in the previous timers by defining the function in the place where it's needed. I still only defining it. I'm not executing it immediately.
   console.log("More timing out...");
 }, 4000);
+
+// I can also pass functions as values to functions that I build, and that are not necessarily built-in function like setTimeout.
+// For example:
+
+function greeter(greetFn) {
+  greetFn();
+}
