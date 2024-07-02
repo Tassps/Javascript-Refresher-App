@@ -361,5 +361,6 @@ setTimeout(handleTimeout, 2000); // In this line I omit the parantheses here "ha
 setTimeout(handleTimeout2, 3000); // I do the same with the function handleTimeout2.
 
 setTimeout(() => {
+  // Here, I essentialy do the same as in the previous timers by defining the function in the place where it's needed. I still only defining it. I'm not executing it immediately.
   console.log("More timing out...");
 }, 4000);
