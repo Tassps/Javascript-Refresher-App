@@ -296,13 +296,13 @@
 // It also allows me to add else if statements if I want to check for more condintions if the first condition wasn't met.
 // And I can add as many else if statements there as I want, but only one else branch.
 
-if (10 === 10) {
-  //...
-} else if (5 === 5) {
-  //...
-} else if (2 === 2) {
-} else {
-}
+// if (10 === 10) {
+//   //...
+// } else if (5 === 5) {
+//   //...
+// } else if (2 === 2) {
+// } else {
+// }
 
 // Now of course, checking for hard-coded values like in the example above makes absolutely no sense. The first condition will always be true for example.
 // Instead, typically, of course, I'll use if statements to check content I don't know in advance.
@@ -330,13 +330,48 @@ if (10 === 10) {
 // For loops are about executing the same piece of code multiple times.
 // For example:
 
-const hobbies = ["Gym", "Chess"];
+// const hobbies = ["Gym", "Chess"];
 
 // Now, if I want to execute some code, for every entry of the hobbies Array, I will create a for loop.
 // For example:
 
 // I create a constant called hobby that will be recreated for every iteration of that for loop.
-for (const hobby of hobbies) {
-  // With the special of keyword, I tell JavaScript that it should create a new constant for every item in the hobbies Array and it should execute the code between the {} as often as needed to go through all the elements of the hobbies Array. So 2 times.
-  console.log(hobby); // In the console I will see "Gym" and "Chess" being output, because of this line of code being executed multiple times.
+// for (const hobby of hobbies) {
+// With the special of keyword, I tell JavaScript that it should create a new constant for every item in the hobbies Array and it should execute the code between the {} as often as needed to go through all the elements of the hobbies Array. So 2 times.
+//   console.log(hobby); // In the console I will see "Gym" and "Chess" being output, because of this line of code being executed multiple times.
+// }
+
+// Using functions as Values
+
+// Here I will pass functions as values to other functions. For example:
+
+function handleTimeout() {
+  console.log("Timed out!");
 }
+
+const handleTimeout2 = () => {
+  console.log("Timed out ... again!");
+};
+
+// And now I can also pass the first function or the constant that contains a function as a value. For example:
+
+setTimeout(handleTimeout, 2000); // In this line I omit the parantheses here "handleTimeout()", because I don't want to execute this function right away. I instead pass the function as a value to setTimeout.
+// The second argument defines the number of milliseconds JavaScript should wait until it executes the function which is the first argument.
+
+setTimeout(handleTimeout2, 3000); // I do the same with the function handleTimeout2.
+
+setTimeout(() => {
+  // Here, I essentialy do the same as in the previous timers by defining the function in the place where it's needed. I still only defining it. I'm not executing it immediately.
+  console.log("More timing out...");
+}, 4000);
+
+// I can also pass functions as values to functions that I build, and that are not necessarily built-in functions like setTimeout.
+// For example:
+
+function greeter(greetFn) {
+  // greeter function here accepts a greet function parameter, so a regular parameter in the end, but a parameter which expects to get a function as value.
+  greetFn(); // Inside of greeter I can execute  greet function like this, calling it as a function by adding ().
+}
+
+greeter(() => console.log("Hi")); // The arrow function is being executed because I'm passing it as value for the greetFn parameter to the greeter function.
+// And inside of that greeter function I'm then executing the greetFn parameter, the value that's received on that parameter, which is the arrow function.
