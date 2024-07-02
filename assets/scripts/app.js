@@ -348,3 +348,7 @@
 function handleTimeout() {
   console.log("Timed out!");
 }
+
+const handleTimeout2 = () => {
+  console.log("Timed out ... again!");
+};
