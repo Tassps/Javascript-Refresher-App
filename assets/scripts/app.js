@@ -389,4 +389,4 @@ function init() {
   greet(); // Inside of init I execute greet. I can't execute greet outside of init though, because it's scoped this init function. Same happens with a variable I define inside init.
 }
 
-init();
+init(); // Here I can execute init because it scoped to the overall file since init is not nested into another function.
