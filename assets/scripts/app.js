@@ -388,3 +388,5 @@ function init() {
   }
   greet(); // Inside of init I execute greet. I can't execute greet outside of init though, because it's scoped this init function. Same happens with a variable I define inside init.
 }
+
+init();
