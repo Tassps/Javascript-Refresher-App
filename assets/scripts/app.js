@@ -345,33 +345,33 @@
 
 // Here I will pass functions as values to other functions. For example:
 
-function handleTimeout() {
-  console.log("Timed out!");
-}
+// function handleTimeout() {
+//   console.log("Timed out!");
+// }
 
-const handleTimeout2 = () => {
-  console.log("Timed out ... again!");
-};
+// const handleTimeout2 = () => {
+//   console.log("Timed out ... again!");
+// };
 
 // And now I can also pass the first function or the constant that contains a function as a value. For example:
 
-setTimeout(handleTimeout, 2000); // In this line I omit the parantheses here "handleTimeout()", because I don't want to execute this function right away. I instead pass the function as a value to setTimeout.
+// setTimeout(handleTimeout, 2000); // In this line I omit the parantheses here "handleTimeout()", because I don't want to execute this function right away. I instead pass the function as a value to setTimeout.
 // The second argument defines the number of milliseconds JavaScript should wait until it executes the function which is the first argument.
 
-setTimeout(handleTimeout2, 3000); // I do the same with the function handleTimeout2.
+// setTimeout(handleTimeout2, 3000); // I do the same with the function handleTimeout2.
 
-setTimeout(() => {
-  // Here, I essentialy do the same as in the previous timers by defining the function in the place where it's needed. I still only defining it. I'm not executing it immediately.
-  console.log("More timing out...");
-}, 4000);
+// setTimeout(() => {
+// Here, I essentialy do the same as in the previous timers by defining the function in the place where it's needed. I still only defining it. I'm not executing it immediately.
+//   console.log("More timing out...");
+// }, 4000);
 
 // I can also pass functions as values to functions that I build, and that are not necessarily built-in functions like setTimeout.
 // For example:
 
-function greeter(greetFn) {
-  // greeter function here accepts a greet function parameter, so a regular parameter in the end, but a parameter which expects to get a function as value.
-  greetFn(); // Inside of greeter I can execute  greet function like this, calling it as a function by adding ().
-}
+// function greeter(greetFn) {
+// greeter function here accepts a greet function parameter, so a regular parameter in the end, but a parameter which expects to get a function as value.
+//   greetFn(); // Inside of greeter I can execute  greet function like this, calling it as a function by adding ().
+// }
 
-greeter(() => console.log("Hi")); // The arrow function is being executed because I'm passing it as value for the greetFn parameter to the greeter function.
+// greeter(() => console.log("Hi")); // The arrow function is being executed because I'm passing it as value for the greetFn parameter to the greeter function.
 // And inside of that greeter function I'm then executing the greetFn parameter, the value that's received on that parameter, which is the arrow function.
