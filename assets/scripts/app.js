@@ -375,3 +375,14 @@
 
 // greeter(() => console.log("Hi")); // The arrow function is being executed because I'm passing it as value for the greetFn parameter to the greeter function.
 // And inside of that greeter function I'm then executing the greetFn parameter, the value that's received on that parameter, which is the arrow function.
+
+// Defining functions inside of functions
+
+// This makes sense in the context of React. For example:
+
+function init() {
+  function greet() {
+    console.log("Hi!");
+  }
+  greet();
+}
