@@ -390,3 +390,10 @@
 // }
 
 // init(); // Here I can execute init because it scoped to the overall file since init is not nested into another function.
+
+// References vs Primitive Values
+// Strings, numbers, booleans are all primitives. What's special about them in JavaScript is that we can't edit them.
+// I can overwrite them of course and store something else, but that would be a brand new primitive. The previous primitive will simply be thrown away. It's not edited to be the new primitive.
+// For example:
+
+let userMessage = "Hello!";
