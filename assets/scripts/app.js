@@ -381,12 +381,12 @@
 // This makes sense in the context of React. For example:
 
 // Here I defined a function called init
-function init() {
-  // init contains another function defined inside of it, called greet, which console log "Hi!".
-  function greet() {
-    console.log("Hi!");
-  }
-  greet(); // Inside of init I execute greet. I can't execute greet outside of init though, because it's scoped this init function. Same happens with a variable I define inside init.
-}
+// function init() {
+// init contains another function defined inside of it, called greet, which console log "Hi!".
+// function greet() {
+//   console.log("Hi!");
+// }
+// greet(); // Inside of init I execute greet. I can't execute greet outside of init though, because it's scoped this init function. Same happens with a variable I define inside init.
+// }
 
-init(); // Here I can execute init because it scoped to the overall file since init is not nested into another function.
+// init(); // Here I can execute init because it scoped to the overall file since init is not nested into another function.
