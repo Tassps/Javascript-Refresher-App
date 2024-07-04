@@ -399,3 +399,5 @@
 let userMessage = "Hello!";
 
 userMessage = "Hello there!";
+
+userMessage = userMessage.concat("!!!");
