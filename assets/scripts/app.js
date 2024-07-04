@@ -397,3 +397,5 @@
 // For example:
 
 let userMessage = "Hello!";
+
+userMessage = "Hello there!";
