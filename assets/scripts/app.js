@@ -381,12 +381,23 @@
 // This makes sense in the context of React. For example:
 
 // Here I defined a function called init
-function init() {
-  // init contains another function defined inside of it, called greet, which console log "Hi!".
-  function greet() {
-    console.log("Hi!");
-  }
-  greet(); // Inside of init I execute greet. I can't execute greet outside of init though, because it's scoped this init function. Same happens with a variable I define inside init.
-}
+// function init() {
+// init contains another function defined inside of it, called greet, which console log "Hi!".
+// function greet() {
+//   console.log("Hi!");
+// }
+// greet(); // Inside of init I execute greet. I can't execute greet outside of init though, because it's scoped this init function. Same happens with a variable I define inside init.
+// }
 
-init(); // Here I can execute init because it scoped to the overall file since init is not nested into another function.
+// init(); // Here I can execute init because it scoped to the overall file since init is not nested into another function.
+
+// References vs Primitive Values
+// Strings, numbers, booleans are all primitives. What's special about them in JavaScript is that we can't edit them.
+// I can overwrite them of course and store something else, but that would be a brand new primitive. The previous primitive will simply be thrown away. It's not edited to be the new primitive.
+// For example:
+
+let userMessage = "Hello!"; // This here is considered a primitive value
+
+userMessage = "Hello there!"; // Here I overwrite the value of the variable. I don't edit it. That's a brand new string. The old string, which was stored in memory, will be just thrown away, it's not edited to be this string in this line.
+
+userMessage = userMessage.concat("!!!"); // Even if I execute a method on userMessage, this will produce a new string again and not edited.
