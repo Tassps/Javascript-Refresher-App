@@ -396,8 +396,8 @@
 // I can overwrite them of course and store something else, but that would be a brand new primitive. The previous primitive will simply be thrown away. It's not edited to be the new primitive.
 // For example:
 
-let userMessage = "Hello!";
+let userMessage = "Hello!"; // This here is considered a primitive value
 
-userMessage = "Hello there!";
+userMessage = "Hello there!"; // Here I overwrite the value of the variable. I don't edit it. That's a brand new string. The old string, which was stored in memory, will be just thrown away, it's not edited to be this string in this line.
 
-userMessage = userMessage.concat("!!!");
+userMessage = userMessage.concat("!!!"); // Even if I execute a method on userMessage, this will produce a new string again and not edited.
