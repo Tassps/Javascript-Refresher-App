@@ -406,3 +406,5 @@ userMessage = userMessage.concat("!!!"); // Even if I execute a method on userMe
 // For example:
 
 const hobbies = ["Gym", "Chess"];
+
+hobbies.push("Basketball");
