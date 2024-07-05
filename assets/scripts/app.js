@@ -402,11 +402,11 @@
 
 // userMessage = userMessage.concat("!!!"); // Even if I execute a method on userMessage, this will produce a new string again and not edited.
 
-// When it comes to arrays and objects though, these ones I can edit.
+// When it comes to arrays and objects though, these ones I can edit. Because arrays are objects and objects in JavaScript are so-called reference values.
 // For example:
 
 const hobbies = ["Gym", "Chess"];
 
-hobbies.push("Basketball"); // Here I edited the original Array
+hobbies.push("Basketball"); // Here I edited the original Array. Push indeed edited the original array, it mutated the original array.
 
 console.log(hobbies);
