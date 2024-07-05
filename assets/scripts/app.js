@@ -410,3 +410,10 @@ const hobbies = ["Gym", "Chess"];
 hobbies.push("Basketball"); // Here I edited the original Array. Push indeed edited the original array, it mutated the original array.
 
 console.log(hobbies);
+
+// In the end, the process of editing in the code above simply means that in a variable I don't store the value, but instead the address of that value in memory.
+// So that array is stored somewhere in memory, so in the memory of my computer, and it's the address of that place in memory that's stored in the hobbies constant.
+// When I call push, JavaScript will reach out to that address, open the value in that address, and add the item "Basketball" to the existing array in memory.
+// So the array in memory changes, the address does not.
+// The address matters only when I deal with objects. There, it's the address that's being stored, and that's all the reason why I can edit the hobbies array despite using constant.
+// const technically does not mean that the value can't be edited, but that the variable can't be overwritten.
