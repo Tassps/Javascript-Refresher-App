@@ -427,3 +427,5 @@
 const array2 = [2, 3, 5, 7];
 
 const map2 = array2.map((x) => x + 4);
+
+console.log(map2);
