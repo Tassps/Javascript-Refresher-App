@@ -423,3 +423,5 @@
 // Not really next-gen JavaScript, but also important: JavaScript array functions like map(), filter(), reduce() etc.
 // map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
 // For example:
+
+const array2 = [2, 3, 5, 7];
