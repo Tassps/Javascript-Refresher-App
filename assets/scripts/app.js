@@ -417,3 +417,9 @@
 // So the array in memory changes, the address does not.
 // The address matters only when I deal with objects. There, it's the address that's being stored, and that's all the reason why I can edit the hobbies array despite using constant.
 // const technically does not mean that the value can't be edited, but that the variable can't be overwritten.
+
+// JS Array functions
+
+// Not really next-gen JavaScript, but also important: JavaScript array functions like map(), filter(), reduce() etc.
+// map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
+// For example:
