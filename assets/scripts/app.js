@@ -424,8 +424,8 @@
 // map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
 // For example:
 
-const array2 = [2, 3, 5, 7];
+const array2 = [2, 3, 5, 7]; // I declared a constant called array2 which contains an array with four numbers.
 
-const map2 = array2.map((x) => x + 4);
+const map2 = array2.map((x) => x + 4); // In this new constant I call the map method on the array2. The map method creates a new array by calling a provided function on every element in the calling array. The function takes a single parameter (x) and returns x + 4.
 
 console.log(map2);
