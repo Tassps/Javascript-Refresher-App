@@ -432,3 +432,5 @@ console.log(map2);
 
 // find() method of Array instances returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
 // For example:
+
+const array2 = [3, 7, 9, 21, 15];
