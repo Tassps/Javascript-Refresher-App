@@ -429,3 +429,6 @@ const array2 = [2, 3, 5, 7]; // I declared a constant called array2 which contai
 const map2 = array2.map((x) => x + 4); // In this new constant I call the map method on the array2. The map method creates a new array by calling a provided function on every element in the calling array. The function takes a single parameter (x) and returns x + 4.
 
 console.log(map2);
+
+// find() method of Array instances returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+// For example:
