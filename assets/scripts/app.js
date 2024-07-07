@@ -434,3 +434,5 @@ console.log(map2);
 // For example:
 
 const array2 = [3, 7, 9, 21, 15];
+
+const foundNumb = array2.find((num) => num > 10);
