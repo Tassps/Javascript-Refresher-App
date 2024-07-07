@@ -436,3 +436,5 @@ console.log(map2);
 const array2 = [3, 7, 9, 21, 15];
 
 const foundNumb = array2.find((num) => num > 10);
+
+console.log(foundNumb);
