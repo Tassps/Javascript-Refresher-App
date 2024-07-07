@@ -424,8 +424,17 @@
 // map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
 // For example:
 
-const array2 = [2, 3, 5, 7];
+const array2 = [2, 3, 5, 7]; // I declared a constant called array2 which contains an array with four numbers.
 
-const map2 = array2.map((x) => x + 4);
+const map2 = array2.map((x) => x + 4); // In this new constant I call the map method on the array2. The map method creates a new array by calling a provided function on every element in the calling array. The function takes a single parameter (x) and returns x + 4.
 
 console.log(map2);
+
+// find() method of Array instances returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+// For example:
+
+const array2 = [3, 7, 9, 21, 15];
+
+const foundNumb = array2.find((num) => num > 10);
+
+console.log(foundNumb);
