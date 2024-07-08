@@ -433,9 +433,9 @@
 // find() method of Array instances returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
 // For example:
 
-const array2 = [3, 7, 9, 21, 15]; // In this line I declare a constant variable named array2 and assign it an array with 5 elements.
+// const array2 = [3, 7, 9, 21, 15]; // In this line I declare a constant variable named array2 and assign it an array with 5 elements.
 
-const foundNumb = array2.find((num) => num > 10); // In this line I declare a constant variable named foundNumb. After I call the .find() method on the array2, which takes an arrow function as its argument. This function is executed on each element of the array until it finds the first element that satisfies the provided condition.
+// const foundNumb = array2.find((num) => num > 10); // In this line I declare a constant variable named foundNumb. After I call the .find() method on the array2, which takes an arrow function as its argument. This function is executed on each element of the array until it finds the first element that satisfies the provided condition.
 // If an element greater than 10 is found, it is returned by the .find() method and assigned to the foundNumb variable. If no such element is found, undefined is returned.
 
-console.log(foundNumb); // Here, since the .find() method found the value 21 as the first element greater than 10 in the array2 array, 21 is printed to the console.
+// console.log(foundNumb); // Here, since the .find() method found the value 21 as the first element greater than 10 in the array2 array, 21 is printed to the console.
