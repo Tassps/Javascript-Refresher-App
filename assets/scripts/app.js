@@ -444,3 +444,5 @@
 // For example:
 
 const array2 = [3, 10, 18, 20, 7];
+
+const isEvenNumb = (element) => element % 2 === 0;
