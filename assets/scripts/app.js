@@ -424,17 +424,27 @@
 // map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array.
 // For example:
 
-const array2 = [2, 3, 5, 7]; // I declared a constant called array2 which contains an array with four numbers.
+// const array2 = [2, 3, 5, 7]; // I declared a constant called array2 which contains an array with four numbers.
 
-const map2 = array2.map((x) => x + 4); // In this new constant I call the map method on the array2. The map method creates a new array by calling a provided function on every element in the calling array. The function takes a single parameter (x) and returns x + 4.
+// const map2 = array2.map((x) => x + 4); // In this new constant I call the map method on the array2. The map method creates a new array by calling a provided function on every element in the calling array. The function takes a single parameter (x) and returns x + 4.
 
-console.log(map2);
+// console.log(map2);
 
 // find() method of Array instances returns the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
 // For example:
 
-const array2 = [3, 7, 9, 21, 15];
+// const array2 = [3, 7, 9, 21, 15]; // In this line I declare a constant variable named array2 and assign it an array with 5 elements.
 
-const foundNumb = array2.find((num) => num > 10);
+// const foundNumb = array2.find((num) => num > 10); // In this line I declare a constant variable named foundNumb. After I call the .find() method on the array2, which takes an arrow function as its argument. This function is executed on each element of the array until it finds the first element that satisfies the provided condition.
+// If an element greater than 10 is found, it is returned by the .find() method and assigned to the foundNumb variable. If no such element is found, undefined is returned.
 
-console.log(foundNumb);
+// console.log(foundNumb); // Here, since the .find() method found the value 21 as the first element greater than 10 in the array2 array, 21 is printed to the console.
+
+// findIndex() method of Array instances returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
+// For example:
+
+const array2 = [3, 10, 18, 20, 7];
+
+const isEvenNumb = (element) => element % 2 === 0;
+
+console.log(array2.findIndex(isEvenNumber));
