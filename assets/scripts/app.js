@@ -446,3 +446,5 @@
 const array2 = [3, 10, 18, 20, 7];
 
 const isEvenNumb = (element) => element % 2 === 0;
+
+console.log(array2.findIndex(isEvenNumber));
