@@ -439,3 +439,5 @@
 // If an element greater than 10 is found, it is returned by the .find() method and assigned to the foundNumb variable. If no such element is found, undefined is returned.
 
 // console.log(foundNumb); // Here, since the .find() method found the value 21 as the first element greater than 10 in the array2 array, 21 is printed to the console.
+
+// findIndex() method of Array instances returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
