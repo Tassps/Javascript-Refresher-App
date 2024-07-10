@@ -451,3 +451,6 @@ const isEvenNumb = (element) => element % 2 === 0; // Here I defined a function 
 console.log(array2.findIndex(isEvenNumb)); // Here I'm using the findIndex() method on array2. Pass the isEvenNumb function as a callback to findIndex.
 // findIndex iterates over array 2 and applies isEvenNumb to each element. It returns the index of the first element that satisfies the condition in 'isEvenNumb'.
 // // 8. 'console.log' prints the result to the console, which is expected to be 1 because the element at index 1 (10) is the first even number in the array.
+
+// indexOf() method of Array instances returns the first index at which a given element can be found in the array, or -1 if it is not present.
+// For example:
