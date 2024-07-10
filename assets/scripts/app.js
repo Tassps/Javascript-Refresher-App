@@ -443,8 +443,19 @@
 // findIndex() method of Array instances returns the index of the first element in an array that satisfies the provided testing function. If no elements satisfy the testing function, -1 is returned.
 // For example:
 
-const array2 = [3, 10, 18, 20, 7];
+const array2 = [3, 10, 18, 20, 7]; // In this line I defined an array named array2 with a set of 5 elements.
 
-const isEvenNumb = (element) => element % 2 === 0;
+const isEvenNumb = (element) => element % 2 === 0; // Here I defined a function called isEvenNumb using an arrow function. This function I used takes an argument element and returns true if the element is an even number.
+// The function isEvenNumb checks if a number is even by using the modulus operator (%).
 
-console.log(array2.findIndex(isEvenNumber));
+console.log(array2.findIndex(isEvenNumb)); // Here I'm using the findIndex() method on array2. Pass the isEvenNumb function as a callback to findIndex.
+// findIndex iterates over array 2 and applies isEvenNumb to each element. It returns the index of the first element that satisfies the condition in 'isEvenNumb'.
+// // 8. 'console.log' prints the result to the console, which is expected to be 1 because the element at index 1 (10) is the first even number in the array.
+
+// indexOf() method of Array instances returns the first index at which a given element can be found in the array, or -1 if it is not present.
+// For example:
+
+const fruits = ["apple", "banana", "cherry", "date", "banana"];
+
+console.log(fruits.indexOf("banana"));
+// Expected output: 1
