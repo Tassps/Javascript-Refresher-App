@@ -456,3 +456,5 @@ console.log(array2.findIndex(isEvenNumb)); // Here I'm using the findIndex() met
 // For example:
 
 const fruits = ["apple", "banana", "cherry", "date", "banana"];
+
+console.log(fruits.indexOf("banana"));
