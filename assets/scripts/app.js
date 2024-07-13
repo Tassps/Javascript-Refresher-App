@@ -455,7 +455,11 @@ console.log(array2.findIndex(isEvenNumb)); // Here I'm using the findIndex() met
 // indexOf() method of Array instances returns the first index at which a given element can be found in the array, or -1 if it is not present.
 // For example:
 
-const fruits = ["apple", "banana", "cherry", "date", "banana"];
+const fruits = ["apple", "banana", "cherry", "date", "banana"]; // In this line I created a constant array called fruits which has 5 elements in it.
 
-console.log(fruits.indexOf("banana"));
+console.log(fruits.indexOf("banana")); // In this line the indexOf method is used on the fruits array to find the first occurrence of the element banana. Which gives me the output 1, the index.
 // Expected output: 1
+
+// Start from index 3
+console.log(fruits.indexOf("banana", 3));
+// Expected output: 4 
