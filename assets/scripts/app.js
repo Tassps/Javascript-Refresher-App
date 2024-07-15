@@ -464,5 +464,5 @@ console.log(fruits.indexOf("banana")); // In this line the indexOf method is use
 console.log(fruits.indexOf("banana", 3)); // In this line I use the indexOf method again, but with an additional parameter 3, which specifies the starting index for the search.
 // Expected output: 4, which is the next occurance of banana.
 
-console.log(fruits.indexOf("fig"));
-// Expected output: -1 
+console.log(fruits.indexOf("fig")); // In this line I use the indexOf method to search for the element fig.
+// Expected output: -1, since fig is not present in the array. That indicates that the element is not found. 
