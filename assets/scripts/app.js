@@ -461,5 +461,5 @@ console.log(fruits.indexOf("banana")); // In this line the indexOf method is use
 // Expected output: 1
 
 // Start from index 3
-console.log(fruits.indexOf("banana", 3));
-// Expected output: 4
+console.log(fruits.indexOf("banana", 3)); // In this line I use the indexOf method again, but with an additional parameter 3, which specifies the starting index for the search.
+// Expected output: 4, which is the next occurance 
