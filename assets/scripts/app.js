@@ -472,5 +472,5 @@
 
 const numbers = [10, 20, 30, 40];
 
-console.log(numbers.includes(20));
-// Expected output: true 
+console.log(numbers.includes(20)); // In this line I check with the method includes() if the array numbers contains the element 20.
+// Expected output: true, because 20 is an element of numbers array.
