@@ -468,4 +468,6 @@
 // Expected output: -1, since fig is not present in the array. That indicates that the element is not found.
 
 // includes() method of Array instances determines whether an array includes a certain value among its entries, returning true of false as appropriate.
-// For example: 
+// For example:
+
+const numbers = [10, 20, 30, 40]; 
