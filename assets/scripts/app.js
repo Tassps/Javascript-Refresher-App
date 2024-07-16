@@ -470,4 +470,7 @@
 // includes() method of Array instances determines whether an array includes a certain value among its entries, returning true of false as appropriate.
 // For example:
 
-const numbers = [10, 20, 30, 40]; 
+const numbers = [10, 20, 30, 40];
+
+console.log(numbers.includes(20));
+// Expected output: true 
