@@ -467,4 +467,5 @@
 // console.log(fruits.indexOf("fig")); // In this line I use the indexOf method to search for the element fig.
 // Expected output: -1, since fig is not present in the array. That indicates that the element is not found.
 
-
+// includes() method of Array instances determines whether an array includes a certain value among its entries, returning true of false as appropriate.
+// For example: 
