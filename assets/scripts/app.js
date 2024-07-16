@@ -455,14 +455,25 @@
 // indexOf() method of Array instances returns the first index at which a given element can be found in the array, or -1 if it is not present.
 // For example:
 
-const fruits = ["apple", "banana", "cherry", "date", "banana"]; // In this line I created a constant array called fruits which has 5 elements in it.
+// const fruits = ["apple", "banana", "cherry", "date", "banana"]; // In this line I created a constant array called fruits which has 5 elements in it.
 
-console.log(fruits.indexOf("banana")); // In this line the indexOf method is used on the fruits array to find the first occurrence of the element banana. Which gives me the output 1, the index.
+// console.log(fruits.indexOf("banana")); // In this line the indexOf method is used on the fruits array to find the first occurrence of the element banana. Which gives me the output 1, the index.
 // Expected output: 1
 
 // Start from index 3
-console.log(fruits.indexOf("banana", 3)); // In this line I use the indexOf method again, but with an additional parameter 3, which specifies the starting index for the search.
+// console.log(fruits.indexOf("banana", 3)); // In this line I use the indexOf method again, but with an additional parameter 3, which specifies the starting index for the search.
 // Expected output: 4, which is the next occurance of banana.
 
-console.log(fruits.indexOf("fig")); // In this line I use the indexOf method to search for the element fig.
-// Expected output: -1, since fig is not present in the array. That indicates that the element is not found. 
+// console.log(fruits.indexOf("fig")); // In this line I use the indexOf method to search for the element fig.
+// Expected output: -1, since fig is not present in the array. That indicates that the element is not found.
+
+// includes() method of Array instances determines whether an array includes a certain value among its entries, returning true of false as appropriate.
+// For example:
+
+const numbers = [10, 20, 30, 40];
+
+console.log(numbers.includes(20)); // In this line I check with the method includes() if the array numbers contains the element 20.
+// Expected output: true, because 20 is an element of numbers array.
+
+console.log(numbers.includes(60)); // In this line I check with the method includes() if the array numbers contains the element 60.
+// Expected output: false, because 60 is not an element of numbers. 
