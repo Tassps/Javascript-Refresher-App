@@ -470,10 +470,21 @@
 // includes() method of Array instances determines whether an array includes a certain value among its entries, returning true of false as appropriate.
 // For example:
 
-const numbers = [10, 20, 30, 40];
+// const numbers = [10, 20, 30, 40];
 
-console.log(numbers.includes(20)); // In this line I check with the method includes() if the array numbers contains the element 20.
+// console.log(numbers.includes(20)); // In this line I check with the method includes() if the array numbers contains the element 20.
 // Expected output: true, because 20 is an element of numbers array.
 
-console.log(numbers.includes(60)); // In this line I check with the method includes() if the array numbers contains the element 60.
-// Expected output: false, because 60 is not an element of numbers. 
+// console.log(numbers.includes(60)); // In this line I check with the method includes() if the array numbers contains the element 60.
+// Expected output: false, because 60 is not an element of numbers.
+
+// some() method of Array instances tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+// For example:
+
+const numbers = [1, 2, 3, 4, 5];
+
+const greaterThanThree = (num) => num > 3; // In this line I define a function that takes one parameter.
+// Checks whether an element is greater than 3. If num is greater than 3, the function returns true; otherwise, it returns false.
+
+console.log(numbers.some(greaterThanThree)); // In this line, the some() method I called on the numbers array, tests whether at least one element in the array passes the test implemented by the provided function.
+// Expected output: true, since there are elements greater than 3 in the array numbers, (4 and 5).
