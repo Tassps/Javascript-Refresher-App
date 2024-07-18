@@ -486,4 +486,5 @@ const numbers = [1, 2, 3, 4, 5];
 const greaterThanThree = (num) => num > 3; // In this line I define a function that takes one parameter.
 // Checks whether an element is greater than 3. If num is greater than 3, the function returns true; otherwise, it returns false.
 
-console.log(numbers.some(greaterThanThree)); 
+console.log(numbers.some(greaterThanThree)); // In this line, the some() method I called on the numbers array, tests whether at least one element in the array passes the test implemented by the provided function.
+// Expected output: true, since there are elements greater than 3 in the array numbers, (4 and 5).
