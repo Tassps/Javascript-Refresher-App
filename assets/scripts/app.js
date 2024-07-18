@@ -477,3 +477,6 @@
 
 // console.log(numbers.includes(60)); // In this line I check with the method includes() if the array numbers contains the element 60.
 // Expected output: false, because 60 is not an element of numbers.
+
+// some() method of Array instances tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
+// For example: 
