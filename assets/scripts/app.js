@@ -470,10 +470,10 @@
 // includes() method of Array instances determines whether an array includes a certain value among its entries, returning true of false as appropriate.
 // For example:
 
-const numbers = [10, 20, 30, 40];
+// const numbers = [10, 20, 30, 40];
 
-console.log(numbers.includes(20)); // In this line I check with the method includes() if the array numbers contains the element 20.
+// console.log(numbers.includes(20)); // In this line I check with the method includes() if the array numbers contains the element 20.
 // Expected output: true, because 20 is an element of numbers array.
 
-console.log(numbers.includes(60)); // In this line I check with the method includes() if the array numbers contains the element 60.
-// Expected output: false, because 60 is not an element of numbers. 
+// console.log(numbers.includes(60)); // In this line I check with the method includes() if the array numbers contains the element 60.
+// Expected output: false, because 60 is not an element of numbers.
