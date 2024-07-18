@@ -483,6 +483,7 @@
 
 const numbers = [1, 2, 3, 4, 5];
 
-// Checks whether an element is greater than 3
-const greaterThanThree = (num) => num > 3;
+const greaterThanThree = (num) => num > 3; // In this line I define a function that takes one parameter.
+// Checks whether an element is greater than 3. If num is greater than 3, the function returns true; otherwise, it returns false.
+
 
