@@ -481,10 +481,21 @@
 // some() method of Array instances tests whether at least one element in the array passes the test implemented by the provided function. It returns true if, in the array, it finds an element for which the provided function returns true; otherwise it returns false. It doesn't modify the array.
 // For example:
 
-const numbers = [1, 2, 3, 4, 5];
+// const numbers = [1, 2, 3, 4, 5];
 
-const greaterThanThree = (num) => num > 3; // In this line I define a function that takes one parameter.
+// const greaterThanThree = (num) => num > 3; // In this line I define a function that takes one parameter.
 // Checks whether an element is greater than 3. If num is greater than 3, the function returns true; otherwise, it returns false.
 
-console.log(numbers.some(greaterThanThree)); // In this line, the some() method I called on the numbers array, tests whether at least one element in the array passes the test implemented by the provided function.
+// console.log(numbers.some(greaterThanThree)); // In this line, the some() method I called on the numbers array, tests whether at least one element in the array passes the test implemented by the provided function.
 // Expected output: true, since there are elements greater than 3 in the array numbers, (4 and 5).
+
+// filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just elements from the given array that pass the test implemented by the provided function.
+// For example:
+
+const numbers = [5, 12, 8, 130, 44];
+
+const filteredNumbers = numbers.filter((number) => number > 10); // The filter method I called here creates a new array with all elements that pass the test implemented by the provided function.
+// If the number is greater than 10, which the arrow function I provided checks, then it is included in the new array.
+
+console.log(filteredNumbers);
+// Expected output: Array [112, 130, 44], which is the shallow copy and new array which being produced while using the filter() method on the numbers array.           
