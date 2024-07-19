@@ -494,4 +494,5 @@
 
 const numbers = [5, 12, 8, 130, 44];
 
-const filteredNumbers = numbers.filter((number) => number > 10); 
+const filteredNumbers = numbers.filter((number) => number > 10); // The filter method I called here creates a new array with all elements that pass the test implemented by the provided function.
+// If the number is greater than 10, which the arrow function I provided checks, then it is included in the new array. 
