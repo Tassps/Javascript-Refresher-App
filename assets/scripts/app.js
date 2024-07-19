@@ -492,3 +492,6 @@
 // filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just elements from the given array that pass the test implemented by the provided function.
 // For example:
 
+const numbers = [5, 12, 8, 130, 44];
+
+
