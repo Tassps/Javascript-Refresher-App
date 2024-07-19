@@ -488,3 +488,7 @@
 
 // console.log(numbers.some(greaterThanThree)); // In this line, the some() method I called on the numbers array, tests whether at least one element in the array passes the test implemented by the provided function.
 // Expected output: true, since there are elements greater than 3 in the array numbers, (4 and 5).
+
+// filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just elements from the given array that pass the test implemented by the provided function.
+// For example:
+
