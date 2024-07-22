@@ -492,10 +492,10 @@
 // filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just elements from the given array that pass the test implemented by the provided function.
 // For example:
 
-const numbers = [5, 12, 8, 130, 44];
+// const numbers = [5, 12, 8, 130, 44];
 
-const filteredNumbers = numbers.filter((number) => number > 10); // The filter method I called here creates a new array with all elements that pass the test implemented by the provided function.
+// const filteredNumbers = numbers.filter((number) => number > 10); // The filter method I called here creates a new array with all elements that pass the test implemented by the provided function.
 // If the number is greater than 10, which the arrow function I provided checks, then it is included in the new array.
 
-console.log(filteredNumbers);
-// Expected output: Array [112, 130, 44], which is the shallow copy and new array which being produced while using the filter() method on the numbers array.           
+// console.log(filteredNumbers);
+// Expected output: Array [112, 130, 44], which is the shallow copy and new array which being produced while using the filter() method on the numbers array.
