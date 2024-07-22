@@ -505,4 +505,4 @@
 
 const array2 = [2, 3, 4, 5];
 
-
+const initialProduct = 1; 
