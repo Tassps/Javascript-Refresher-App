@@ -507,7 +507,8 @@ const array2 = [2, 3, 4, 5];
 
 const initialProduct = 1; // The value 1 will be used as the starting value for my multiplication operation bellow.
 
-const productWithInitial = array2.reduce(
-  (accumulator, currentValue) => accumulator * currentValue,
-  initialProduct,
+const productWithInitial = array2.reduce( // Here I start the reduce method on the array2 array. The reduce method executes a reducer function (that I provided) on each element of the array, resulting in a single output value.
+  (accumulator, currentValue) => accumulator * currentValue, // In here, the reducer function takes 2 parameters, accumulator, which holds the accumulated result of the reduction so far. It starts with initialProduct value and updated with each iteration.
+  // currentValue is the current element fo the array being processed.
+  initialProduct, // The reduce method uses this initial value as the starting point for the reduction. 
 );
