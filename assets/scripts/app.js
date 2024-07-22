@@ -514,4 +514,6 @@ const productWithInitial = array2.reduce( // Here I start the reduce method on t
 );
 
 console.log(productWithInitial);
-// Expected output: 120
+// Expected output: after all iterations, the reduce method returns the accumulated result, which is 120.
+
+
