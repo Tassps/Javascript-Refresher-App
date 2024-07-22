@@ -505,4 +505,9 @@
 
 const array2 = [2, 3, 4, 5];
 
-const initialProduct = 1; // The value 1 will be used as the starting value for my multiplication operation bellow. 
+const initialProduct = 1; // The value 1 will be used as the starting value for my multiplication operation bellow.
+
+const productWithInitial = array2.reduce(
+  (accumulator, currentValue) => accumulator * currentValue,
+  initialProduct,
+);
