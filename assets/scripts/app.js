@@ -518,10 +518,10 @@
 
 // The reduce() method is a powerful tool for aggregating array values, allowing for operations like summing, multiplying, averaging, or more complex transformations. In the example above, I used it to compute the product of the array elements.
 
-// contact() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+// concat() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 
 const fruits = ["apple", "banana", "pineapple"];
 
 const vegetables = ["carrot", "lettuce", "pepper"];
 
-const mixedArray = fruits.concat(vegetables);
+const mixedArray = fruits.concat(vegetables); // In this line I call the concat() method on the fruits array, passing vegetables as an argument. The concat() method combines the elements of the fruits and vegetables into a new array.
