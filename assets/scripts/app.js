@@ -522,4 +522,6 @@
 
 const fruits = ["apple", "banana", "pineapple"];
 
+const vegetables = ["carrot", "lettuce", "pepper"];
+
 
