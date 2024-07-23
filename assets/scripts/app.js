@@ -525,3 +525,5 @@ const fruits = ["apple", "banana", "pineapple"];
 const vegetables = ["carrot", "lettuce", "pepper"];
 
 const mixedArray = fruits.concat(vegetables); // In this line I call the concat() method on the fruits array, passing vegetables as an argument. The concat() method combines the elements of the fruits and vegetables into a new array.
+
+console.log(mixedArray); 
