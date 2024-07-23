@@ -517,3 +517,9 @@
 // Expected output: after all iterations, the reduce method returns the accumulated result, which is 120.
 
 // The reduce() method is a powerful tool for aggregating array values, allowing for operations like summing, multiplying, averaging, or more complex transformations. In the example above, I used it to compute the product of the array elements.
+
+// contact() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+
+const fruits = ["apple", "banana", "pineapple"];
+
+
