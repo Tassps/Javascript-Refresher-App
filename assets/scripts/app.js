@@ -503,17 +503,17 @@
 // reduce() method of Array instances executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of runnning the reducer across all elements of the array is a single value.
 // The first time that the callback is run there is no "return value of the previous calculation". If supplied, an initial value may be used in its place. Otherwise the array element at index 0 is used as the initial value and iteration starts from the next element (index 1 instead of index 0).
 
-const array2 = [2, 3, 4, 5];
+// const array2 = [2, 3, 4, 5];
 
-const initialProduct = 1; // The value 1 will be used as the starting value for my multiplication operation bellow.
+// const initialProduct = 1; // The value 1 will be used as the starting value for my multiplication operation bellow.
 
-const productWithInitial = array2.reduce( // Here I start the reduce method on the array2 array. The reduce method executes a reducer function (that I provided) on each element of the array, resulting in a single output value.
-  (accumulator, currentValue) => accumulator * currentValue, // In here, the reducer function takes 2 parameters, accumulator, which holds the accumulated result of the reduction so far. It starts with initialProduct value and updated with each iteration.
+// const productWithInitial = array2.reduce( // Here I start the reduce method on the array2 array. The reduce method executes a reducer function (that I provided) on each element of the array, resulting in a single output value.
+  // (accumulator, currentValue) => accumulator * currentValue, // In here, the reducer function takes 2 parameters, accumulator, which holds the accumulated result of the reduction so far. It starts with initialProduct value and updated with each iteration.
   // currentValue is the current element fo the array being processed.
-  initialProduct, // The reduce method uses this initial value as the starting point for the reduction.
-);
+  // initialProduct, // The reduce method uses this initial value as the starting point for the reduction.
+// );
 
-console.log(productWithInitial);
+// console.log(productWithInitial);
 // Expected output: after all iterations, the reduce method returns the accumulated result, which is 120.
 
-// The reduce() method is a powerful tool for aggregating array values, allowing for operations like summing, multiplying, averaging, or more complex transformations. In the example above, I used it to compute the product of the array elements. 
+// The reduce() method is a powerful tool for aggregating array values, allowing for operations like summing, multiplying, averaging, or more complex transformations. In the example above, I used it to compute the product of the array elements.
