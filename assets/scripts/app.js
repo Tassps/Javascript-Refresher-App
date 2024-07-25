@@ -520,10 +520,10 @@
 
 // concat() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
 
-const fruits = ["apple", "banana", "pineapple"];
+// const fruits = ["apple", "banana", "pineapple"];
 
-const vegetables = ["carrot", "lettuce", "pepper"];
+// const vegetables = ["carrot", "lettuce", "pepper"];
 
-const mixedArray = fruits.concat(vegetables); // In this line I call the concat() method on the fruits array, passing vegetables as an argument. The concat() method combines the elements of the fruits and vegetables into a new array.
+// const mixedArray = fruits.concat(vegetables); // In this line I call the concat() method on the fruits array, passing vegetables as an argument. The concat() method combines the elements of the fruits and vegetables into a new array.
 
-console.log(mixedArray); // The mixedArray now contains the elements from both fruits and vegetables and will be printed out in that order to the console: ["apple", "banana", "pineapple", "carrot", "lettuce", "pepper"].
+// console.log(mixedArray); // The mixedArray now contains the elements from both fruits and vegetables and will be printed out in that order to the console: ["apple", "banana", "pineapple", "carrot", "lettuce", "pepper"].
