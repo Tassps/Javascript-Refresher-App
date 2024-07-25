@@ -532,6 +532,7 @@
 // slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
 // For example:
 
-const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+const fruits = ["apple", "banana", "cherry", "date", "pineapple"];
 
-console.log(fruits.slice(1)); 
+console.log(fruits.slice(1)); // I used slice on this line so slice will return a new array containing elements from the start index up to, but not including, the end index.
+// Expected output: Array ["banana", "cherry", "date", "pineapple"]
