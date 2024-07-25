@@ -534,4 +534,4 @@
 
 const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
 
-
+console.log(fruits.slice(1)); 
