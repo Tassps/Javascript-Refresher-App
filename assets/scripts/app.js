@@ -519,6 +519,7 @@
 // The reduce() method is a powerful tool for aggregating array values, allowing for operations like summing, multiplying, averaging, or more complex transformations. In the example above, I used it to compute the product of the array elements.
 
 // concat() method of Array instances is used to merge two or more arrays. This method does not change the existing arrays, but instead returns a new array.
+// For example:
 
 // const fruits = ["apple", "banana", "pineapple"];
 
@@ -527,3 +528,6 @@
 // const mixedArray = fruits.concat(vegetables); // In this line I call the concat() method on the fruits array, passing vegetables as an argument. The concat() method combines the elements of the fruits and vegetables into a new array.
 
 // console.log(mixedArray); // The mixedArray now contains the elements from both fruits and vegetables and will be printed out in that order to the console: ["apple", "banana", "pineapple", "carrot", "lettuce", "pepper"].
+
+// slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
+// For example:
