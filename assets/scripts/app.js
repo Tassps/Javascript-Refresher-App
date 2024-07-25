@@ -536,3 +536,5 @@ const fruits = ["apple", "banana", "cherry", "date", "pineapple"];
 
 console.log(fruits.slice(1)); // I used slice on this line so slice will return a new array containing elements from the start index up to, but not including, the end index.
 // Expected output: Array ["banana", "cherry", "date", "pineapple"]
+
+console.log(fruits.slice(1, 3)); 
