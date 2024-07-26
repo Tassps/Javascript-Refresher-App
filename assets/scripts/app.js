@@ -548,3 +548,5 @@ console.log(fruits.slice(-3)); // I used slice on this line which returns a new 
 
 console.log(fruits.slice(2, -1)); // I used slice on this line which returns a new array which starts at index 2 and go up to, but mot including, the second-to-last element.
 // Expected output: New Array ["cherry", "date"]
+
+console.log(fruits.slice());
