@@ -540,4 +540,5 @@ console.log(fruits.slice(1)); // I used slice on this line so slice will returns
 console.log(fruits.slice(1, 3)); // I used slice on this line which returns a new array which starts at index 1 and go up to, but not including, index 3.
 // Expected output: Array ["banana", "cherry"]
 
-console.log(furits.slice(0, 4)); // I used slice on this line which returns a new array whuch starts 
+console.log(fruits.slice(0, 4)); // I used slice on this line which returns a new array whuch starts 0 and go up to, but not including, index 4.
+// Expected output: Array ["apple", "banana", "cherry", "date"]
