@@ -535,12 +535,13 @@
 const fruits = ["apple", "banana", "cherry", "date", "pineapple"];
 
 console.log(fruits.slice(1)); // I used slice on this line so slice will returns a new array containing elements from the start index up to, but not including, the end index.
-// Expected output: Array ["banana", "cherry", "date", "pineapple"]
+// Expected output: New Array ["banana", "cherry", "date", "pineapple"]
 
 console.log(fruits.slice(1, 3)); // I used slice on this line which returns a new array which starts at index 1 and go up to, but not including, index 3.
-// Expected output: Array ["banana", "cherry"]
+// Expected output: New Array ["banana", "cherry"]
 
-console.log(fruits.slice(0, 4)); // I used slice on this line which returns a new array whuch starts 0 and go up to, but not including, index 4.
-// Expected output: Array ["apple", "banana", "cherry", "date"]
+console.log(fruits.slice(0, 4)); // I used slice on this line which returns a new array which starts 0 and go up to, but not including, index 4.
+// Expected output: New Array ["apple", "banana", "cherry", "date"]
 
-console.log(fruits.splice(-3)); 
+console.log(fruits.slice(-3)); // I used slice on this line which returns a new array which starts at the third-to-last element and go to the end.
+// Expected output: New Array ["cherry", "date", "pineapple"]
