@@ -556,3 +556,5 @@
 // For example:
 
 const colors = ["Red", "Green", "Blue", "Yellow"];
+
+
