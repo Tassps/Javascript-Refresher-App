@@ -560,4 +560,5 @@ const colors = ["Red", "Green", "Blue", "Yellow"];
 colors.splice(2, 0, "Cyan"); // On this line I call the splice() method on the colors array. First parameter, 2 is the index at which to start changing the array. 0 is the number of elements to be removed. Cyan is the element to be added at index 2.
 // Inserts "Cyan" at index 2
 
-console.log(colors); 
+console.log(colors);
+// Expected output: Array ["Red", "Green", "Cyan", "Blue", "Yellow"]
