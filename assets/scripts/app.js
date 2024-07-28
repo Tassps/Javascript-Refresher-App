@@ -552,4 +552,7 @@
 // console.log(fruits.slice()); // I used slice on this line with no arguments, which creates a shallow copy of the entire array.
 // Expected output: New Array ["apple", "banana", "cherry", "date", "pineapple"]
 
+// splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+// For example:
 
+const colors = ["Red", "Green", "Blue", "Yellow"];
