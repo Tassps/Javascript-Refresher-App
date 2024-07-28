@@ -557,4 +557,5 @@
 
 const colors = ["Red", "Green", "Blue", "Yellow"];
 
-
+colors.splice(2, 0, "Cyan");
+// Inserts 
