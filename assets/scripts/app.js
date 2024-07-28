@@ -532,22 +532,33 @@
 // slice() method of Array instances returns a shallow copy of a portion of an array into a new array object selected from start to end (end not included) where start and end represent the index of items in that array. The original array will not be modified.
 // For example:
 
-const fruits = ["apple", "banana", "cherry", "date", "pineapple"];
+// const fruits = ["apple", "banana", "cherry", "date", "pineapple"];
 
-console.log(fruits.slice(1)); // I used slice on this line so slice will returns a new array containing elements from the start index up to, but not including, the end index.
+// console.log(fruits.slice(1)); // I used slice on this line so slice will returns a new array containing elements from the start index up to, but not including, the end index.
 // Expected output: New Array ["banana", "cherry", "date", "pineapple"]
 
-console.log(fruits.slice(1, 3)); // I used slice on this line which returns a new array which starts at index 1 and go up to, but not including, index 3.
+// console.log(fruits.slice(1, 3)); // I used slice on this line which returns a new array which starts at index 1 and go up to, but not including, index 3.
 // Expected output: New Array ["banana", "cherry"]
 
-console.log(fruits.slice(0, 4)); // I used slice on this line which returns a new array which starts 0 and go up to, but not including, index 4.
+// console.log(fruits.slice(0, 4)); // I used slice on this line which returns a new array which starts 0 and go up to, but not including, index 4.
 // Expected output: New Array ["apple", "banana", "cherry", "date"]
 
-console.log(fruits.slice(-3)); // I used slice on this line which returns a new array which starts at the third-to-last element and go to the end.
+// console.log(fruits.slice(-3)); // I used slice on this line which returns a new array which starts at the third-to-last element and go to the end.
 // Expected output: New Array ["cherry", "date", "pineapple"]
 
-console.log(fruits.slice(2, -1)); // I used slice on this line which returns a new array which starts at index 2 and go up to, but mot including, the second-to-last element.
+// console.log(fruits.slice(2, -1)); // I used slice on this line which returns a new array which starts at index 2 and go up to, but mot including, the second-to-last element.
 // Expected output: New Array ["cherry", "date"]
 
-console.log(fruits.slice()); // I used slice on this line with no arguments, which creates a shallow copy of the entire array.
+// console.log(fruits.slice()); // I used slice on this line with no arguments, which creates a shallow copy of the entire array.
 // Expected output: New Array ["apple", "banana", "cherry", "date", "pineapple"]
+
+// splice() method of Array instances changes the contents of an array by removing or replacing existing elements and/or adding new elements in place.
+// For example:
+
+const colors = ["Red", "Green", "Blue", "Yellow"];
+
+colors.splice(2, 0, "Cyan"); // On this line I call the splice() method on the colors array. First parameter, 2 is the index at which to start changing the array. 0 is the number of elements to be removed. Cyan is the element to be added at index 2.
+// Inserts "Cyan" at index 2
+
+console.log(colors);
+// Expected output: Array ["Red", "Green", "Cyan", "Blue", "Yellow"]
